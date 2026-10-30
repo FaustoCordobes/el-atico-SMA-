@@ -3,232 +3,249 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>El Ático de Hisui · TCG y juegos de mesa · San Martín de los Andes</title>
-<meta name="description" content="Tienda de TCG, accesorios y juegos de mesa en San Martín de los Andes. Sobres, cajas, singles, decks, playmats, dados y más.">
-<meta property="og:title" content="El Ático de Hisui">
+<title>El Atico de Hisui · TCG, accesorios y juegos de mesa · San Martín de los Andes</title>
+<meta name="description" content="Pokémon, Yu-Gi-Oh!, Magic, Digimon, One Piece, accesorios y juegos de mesa. Pedí por WhatsApp desde San Martín de los Andes.">
+<meta name="theme-color" content="#E53E3E">
+<meta property="og:title" content="El Atico de Hisui">
 <meta property="og:description" content="TCG, accesorios y juegos de mesa. Pedí por WhatsApp.">
 <style>
-:root{--bg:#f6f1e7;--card:#fffaf0;--tx:#2a2233;--mut:#6b6275;--ac:#4b2e83;--ac2:#c8452f;--ln:#e2d8c3;--ok:#1f7a4d;--ac-tx:#fff;
+:root{--bg:#fff;--card:#fff;--soft:#f5f5f6;--tx:#1d1d22;--mut:#6d6d78;--ac:#E53E3E;--ac-tx:#fff;--ln:#e6e6ea;--ok:#1f7a4d;
  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-:root[data-theme="dark"]{--bg:#17131f;--card:#211b2e;--tx:#f1ebf7;--mut:#a89fb5;--ac:#a68bf0;--ac2:#ff8066;--ln:#352c47;--ok:#4cc38a;--ac-tx:#17131f}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17131f;--card:#211b2e;--tx:#f1ebf7;--mut:#a89fb5;--ac:#a68bf0;--ac2:#ff8066;--ln:#352c47;--ok:#4cc38a;--ac-tx:#17131f}}
+:root[data-theme="dark"]{--bg:#131316;--card:#1c1c21;--soft:#232329;--tx:#f2f2f5;--mut:#a0a0ad;--ln:#33333b;--ok:#4cc38a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#131316;--card:#1c1c21;--soft:#232329;--tx:#f2f2f5;--mut:#a0a0ad;--ln:#33333b;--ok:#4cc38a}}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:"Trebuchet MS",system-ui,sans-serif;padding-bottom:84px;max-width:720px;margin-inline:auto}
-button,input,select,textarea{font:inherit;color:inherit}
-button{cursor:pointer}
-header{padding:14px 16px 8px;display:flex;gap:12px;align-items:center}
-.logo{width:48px;height:48px;border-radius:14px;background:var(--ac);color:var(--ac-tx);display:grid;place-items:center;font-size:26px;flex:none}
-h1{font-size:19px;margin:0;font-family:Georgia,serif}
-.sub{font-size:12px;color:var(--mut)}
-.badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 9px;border-radius:99px;margin-top:3px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,"Segoe UI",Roboto,sans-serif;padding-bottom:84px;max-width:960px;margin-inline:auto}
+button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}
+.ann{background:var(--ac);color:#fff;text-align:center;font-size:13px;font-weight:600;padding:8px 10px}
+header{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--ln)}
+.logo{width:46px;height:46px;border-radius:12px;object-fit:cover;background:var(--ac);flex:none}
+.lg{width:46px;height:46px;border-radius:12px;background:var(--ac);display:grid;place-items:center;font-size:24px;flex:none}
+h1{font-size:18px;margin:0}.sub{font-size:12px;color:var(--mut)}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;margin-top:3px}
 .badge.on{background:color-mix(in srgb,var(--ok) 20%,transparent);color:var(--ok)}
-.badge.off{background:color-mix(in srgb,var(--ac2) 20%,transparent);color:var(--ac2)}
-.roles{display:flex;gap:6px;padding:0 16px 8px}
-.roles button,.tab,.chip{border:1px solid var(--ln);background:var(--card);border-radius:99px;padding:8px 14px;min-height:44px}
-.on-btn{background:var(--ac)!important;color:var(--ac-tx)!important;border-color:var(--ac)!important}
-.tabs{display:flex;gap:8px;overflow-x:auto;padding:6px 16px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
-.tabs .tab{white-space:nowrap;font-weight:700}
-.chips{display:flex;gap:6px;overflow-x:auto;padding:4px 16px}
-.chip{white-space:nowrap;min-height:36px;padding:5px 12px;font-size:13px}
-.search{margin:8px 16px;width:calc(100% - 32px);padding:12px;border-radius:12px;border:1px solid var(--ln);background:var(--card)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:8px 16px}
-.p{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:10px;display:flex;flex-direction:column;gap:4px}
-.pic{height:84px;border-radius:12px;display:grid;place-items:center;font-size:40px;background:linear-gradient(135deg,color-mix(in srgb,var(--ac) 25%,transparent),color-mix(in srgb,var(--ac2) 25%,transparent))}
-.p h3{font-size:14px;margin:4px 0 0}
-.p small{color:var(--mut);font-size:12px;line-height:1.3}
-.price{font-weight:700;font-size:16px}
-.tag{font-size:11px;color:var(--ac2);font-weight:700}
+.badge.off{background:color-mix(in srgb,var(--ac) 20%,transparent);color:var(--ac)}
+.hd{flex:1}.roles{display:flex;gap:6px;padding:8px 16px;font-size:13px;overflow-x:auto}
+.btn,.tab,.chip{border:1px solid var(--ln);background:var(--soft);border-radius:99px;padding:8px 14px;min-height:44px;white-space:nowrap}
+.sel{background:var(--ac)!important;color:var(--ac-tx)!important;border-color:var(--ac)!important}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:10px 16px 4px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+.tab{font-weight:700}
+.cl{font-size:11px;letter-spacing:3px;color:var(--mut);padding:8px 16px 0}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:6px 16px}
+.chip{min-height:36px;padding:5px 12px;font-size:13px}
+.search{margin:6px 16px;width:calc(100% - 32px);padding:12px;border-radius:12px;border:1px solid var(--ln);background:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:8px 16px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(4,1fr)}}
+.p{border:1px solid var(--ln);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:4px;background:var(--card)}
+.im{aspect-ratio:1;border-radius:10px;background:#fff;display:grid;place-items:center;overflow:hidden;position:relative}
+.im img{width:100%;height:100%;object-fit:contain}
+.ph{display:none;position:absolute;inset:0;place-items:center;font-size:44px;background:var(--soft)}
+.ej{position:absolute;top:6px;left:6px;background:#0008;color:#fff;font-size:10px;padding:2px 7px;border-radius:99px}
+.tag{font-size:11px;color:var(--ac);font-weight:700}
+.p h3{font-size:13px;margin:0;line-height:1.3;min-height:34px}
+.price{font-weight:800;font-size:16px}
 .add{margin-top:auto;border:0;border-radius:10px;background:var(--ac);color:var(--ac-tx);min-height:44px;font-weight:700}
 .add:disabled{background:var(--ln);color:var(--mut)}
-nav.bot{position:fixed;bottom:0;left:0;right:0;max-width:720px;margin:auto;background:var(--card);border-top:1px solid var(--ln);display:flex;padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));z-index:10}
+nav.bot{position:fixed;bottom:0;left:0;right:0;max-width:960px;margin:auto;background:var(--card);border-top:1px solid var(--ln);display:flex;padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));z-index:10}
 nav.bot button{flex:1;border:0;background:none;min-height:48px;font-weight:700}
-.sheet{position:fixed;inset:0;background:#0008;z-index:20;display:none;align-items:flex-end}
-.sheet.show{display:flex}
+.sheet{position:fixed;inset:0;background:#0008;z-index:20;display:none;align-items:flex-end}.sheet.show{display:flex}
 .sheet>div{background:var(--bg);width:100%;max-width:720px;margin:auto;max-height:88vh;overflow:auto;border-radius:20px 20px 0 0;padding:16px}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--ln)}
-.qty button{width:36px;height:36px;border-radius:10px;border:1px solid var(--ln);background:var(--card)}
+.qty button{width:36px;height:36px;border-radius:10px;border:1px solid var(--ln);background:var(--soft)}
 label{display:block;font-size:13px;margin-top:10px;color:var(--mut)}
-input,select,textarea{width:100%;padding:11px;border-radius:10px;border:1px solid var(--ln);background:var(--card)}
+input,select,textarea{width:100%;padding:11px;border-radius:10px;border:1px solid var(--ln);background:var(--soft)}
 .big{width:100%;margin-top:14px;min-height:48px;border:0;border-radius:12px;background:var(--ok);color:#fff;font-weight:700}
-.wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:13px;min-width:460px}
-td,th{padding:6px;border-bottom:1px solid var(--ln);text-align:left}
-td input{padding:6px;width:90px}
-.panel{padding:8px 16px}
-.box{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:12px;margin-bottom:12px}
-.sim{font-size:11px;color:var(--mut)}
-footer{padding:18px 16px;text-align:center;font-size:12px;color:var(--mut)}
-footer a{display:inline-block;margin-top:6px;color:var(--ac);font-weight:700}
-.empty{padding:30px 16px;text-align:center;color:var(--mut)}
+.bar{height:8px;background:var(--ln);border-radius:9px;overflow:hidden;margin:6px 0}.bar i{display:block;height:100%;background:var(--ok)}
+.panel{padding:8px 16px}.box{background:var(--soft);border:1px solid var(--ln);border-radius:14px;padding:12px;margin-bottom:12px}
+.wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px;min-width:460px}
+td,th{padding:6px;border-bottom:1px solid var(--ln);text-align:left}td input{padding:6px;width:80px}
+.empty{padding:30px 16px;text-align:center;color:var(--mut);grid-column:1/-1}
+footer{padding:18px 16px;text-align:center;font-size:12px;color:var(--mut)}footer a{color:var(--ac);font-weight:700;display:inline-block;margin:6px 8px 0}
 #ck{position:fixed;left:8px;right:8px;bottom:76px;max-width:704px;margin:auto;background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:12px;z-index:15;font-size:13px;display:none}
-#ck button{margin:6px 6px 0 0;padding:8px 14px;border-radius:10px;border:1px solid var(--ln);background:var(--bg)}
+#ck button{margin:6px 6px 0 0;padding:8px 14px;border-radius:10px;border:1px solid var(--ln);background:var(--soft)}
+.acts{display:flex;gap:10px;overflow-x:auto;padding:10px 16px}.act{flex:none;width:230px;border:1px solid var(--ln);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:5px;background:var(--card)}.act.hoy{border-color:var(--ac);box-shadow:0 0 0 2px color-mix(in srgb,var(--ac) 30%,transparent)}.act h3{margin:0;font-size:15px}.act small{color:var(--mut);line-height:1.3}.dia{font-size:12px;font-weight:800;background:var(--soft);color:var(--tx);align-self:flex-start;padding:3px 10px;border-radius:99px}.act.hoy .dia{background:var(--ac);color:#fff}
 </style>
 </head>
 <body>
+<div class="ann">Superando los 100 USD el envío es gratis</div>
 <header>
- <div class="logo">🎴</div>
- <div><h1>El Ático de Hisui</h1><div class="sub">TCG · Accesorios · Juegos de mesa · San Martín de los Andes</div><span id="estado" class="badge"></span></div>
+ <img class="logo" id="lgi" alt="Logo El Atico de Hisui" src="https://aticodehisui.com/cdn/shop/t/2/assets/atico.jpg" onerror="this.style.display='none';$('lgf').style.display='grid'">
+ <div class="lg" id="lgf" style="display:none">🎴</div>
+ <div class="hd"><h1>El Atico de Hisui</h1><div class="sub">TCG · Accesorios · Juegos de mesa · San Martín de los Andes</div><span id="estado" class="badge"></span></div>
 </header>
-<div class="roles"><button id="rC" class="on-btn" onclick="setRole('c')">Vista cliente</button><button id="rP" onclick="setRole('p')">Panel del local</button><button onclick="resetAll()" title="Restablecer datos de ejemplo">↺ Restablecer</button></div>
+<div class="roles"><button id="rC" class="btn sel" onclick="setRole('c')">Vista cliente</button><button id="rP" class="btn" onclick="setRole('p')">Panel del local</button><button class="btn" onclick="resetAll()">↺ Restablecer datos</button></div>
 
 <main id="cliente">
+ <section id="agenda" style="padding-top:12px"><h2 style="margin:0 16px;font-size:19px">📅 Esta semana en el Ático</h2><div class="sub" style="padding:2px 16px">Torneos, escuelas y juego libre. Anotate por WhatsApp.</div><div class="acts" id="acts"></div></section>
  <div class="tabs" id="tabs"></div>
+ <div class="cl">C A T E G O R Í A S</div>
  <div class="chips" id="chips"></div>
+ <div class="chips" id="chips2"></div>
  <input class="search" id="q" placeholder="Buscar producto…" oninput="render()" aria-label="Buscar producto">
  <div class="grid" id="grid"></div>
 </main>
 
 <main id="panel" class="panel" style="display:none">
- <div class="box"><b>Local</b><br>
-  <button class="add" style="width:100%" id="btnAbrir" onclick="toggleManual()"></button>
-  <div class="sub" style="margin-top:6px">Horario de ejemplo: lunes a sábado de 16:00 a 21:00.</div></div>
+ <div class="box"><b>Local</b><button class="add" style="width:100%;margin-top:8px" id="btnAbrir" onclick="toggleManual()"></button><div class="sub" style="margin-top:6px">Horario de ejemplo: lunes a sábado de 16:00 a 21:00.</div></div>
  <div class="box"><b>Aumento masivo de precios</b>
-  <label>Sección</label><select id="mCat"><option value="all">Todas</option><option value="tcg">TCG</option><option value="comp">Complementos</option><option value="mesa">Juegos de mesa</option></select>
+  <label>Sección</label><select id="mCat"><option value="all">Todas</option><option value="tcg">TCG</option><option value="comp">Complementos</option><option value="mesa">Juegos de mesa</option><option value="uni">Únicos</option></select>
   <label>Porcentaje (%)</label><input id="mPct" type="number" value="10">
   <button class="big" style="background:var(--ac)" onclick="masivo()">Aplicar aumento</button></div>
- <div class="box"><b>Productos</b> <span class="sim">editá precio y stock</span>
+ <div class="box"><b>Actividades de la semana</b><button class="add" style="width:100%;margin:8px 0" onclick="nuevaAct()">+ Agregar actividad</button><div id="atb"></div></div>
+ <div class="box"><b>Productos</b> <small>(precios en USD)</small>
   <button class="add" style="width:100%;margin:8px 0" onclick="nuevo()">+ Agregar producto</button>
-  <div class="wrap"><table><thead><tr><th>Producto</th><th>Precio</th><th>Stock</th><th></th></tr></thead><tbody id="tb"></tbody></table></div></div>
- <div class="box"><b>Pedidos recibidos</b> <span class="sim">(simulado en la demo)</span><div id="ped"></div></div>
+  <div class="wrap"><table><thead><tr><th>Producto</th><th>USD</th><th>Stock</th><th></th></tr></thead><tbody id="tb"></tbody></table></div></div>
+ <div class="box"><b>Pedidos recibidos</b> <small>(simulado en la demo)</small><div id="ped"></div></div>
 </main>
 
 <footer>
  <div>Propiedad de Cordobes Fausto</div>
  <a id="fw" target="_blank" rel="noopener">Contacto por WhatsApp</a>
+ <a href="https://aticodehisui.com/" target="_blank" rel="noopener">Tienda oficial</a>
+ <a id="ig" target="_blank" rel="noopener">Instagram</a>
 </footer>
 
 <nav class="bot" id="bot">
- <button onclick="go('menu')">🛍️ Tienda</button>
- <button onclick="openCart()">🧺 Carrito (<span id="cn">0</span>)</button>
- <button onclick="openOrders()">📦 Mi pedido</button>
+ <button onclick="go()">📅 Agenda</button><button onclick="irTienda()">🛍️ Tienda</button><button onclick="openCart()">🧺 Carrito (<span id="cn">0</span>)</button><button onclick="openOrders()">📦 Mi pedido</button>
 </nav>
-
 <div class="sheet" id="sh"><div id="shc"></div></div>
-<div id="ck">Usamos cookies de medición para mejorar el sitio. <br><button onclick="cookie('si')">Aceptar</button><button onclick="cookie('no')">Rechazar</button></div>
+<div id="ck">Usamos cookies de medición para mejorar el sitio.<br><button onclick="cookie('si')">Aceptar</button><button onclick="cookie('no')">Rechazar</button></div>
 
 <script>
-// ===== CONFIG: pegá acá los datos reales del local =====
-const CONFIG={
-  nombre:"El Ático de Hisui",
-  whatsapp:"5492944000000", // PLACEHOLDER: reemplazar por el número del local
-  alias:"hisui.ejemplo.mp", cbu:"0000000000000000000000",
-  instagram:"https://www.instagram.com/el.atico.de.hisui.sma/",
-  GA_ID:"", CLARITY_ID:"", // si están vacíos no se carga nada
-  horario:{1:[16,21],2:[16,21],3:[16,21],4:[16,21],5:[16,21],6:[16,21]}, // 0=domingo
-  envio:2500
-};
-const KEY="hisui_demo_v1";
-const SECC={tcg:"TCG",comp:"Complementos",mesa:"Juegos de mesa"};
-const SUBS={tcg:["Todo","Sobres","Cajas","Singles","Decks","Cores"],comp:["Todo","Playmats","Dados","Fundas","Carpetas","Otros"],mesa:["Todo","Estrategia","Familiares","Cartas","Cooperativos"]};
-const SEED=[
- ["Sobre booster – edición A","tcg","Sobres",3800,40,"🎴","Sobre sellado de 10 cartas"],
- ["Sobre booster – edición B","tcg","Sobres",4200,25,"🎴","Sobre sellado de 10 cartas"],
- ["Caja de sobres (36 u.)","tcg","Cajas",125000,4,"📦","Display sellado"],
- ["Elite Trainer Box","tcg","Cajas",78000,6,"🧰","Caja con sobres y accesorios"],
- ["Single holo rara","tcg","Singles",6500,12,"✨","Carta suelta, estado NM"],
- ["Single ultra rara","tcg","Singles",18000,5,"🌟","Carta suelta, estado NM"],
- ["Single común (pack x10)","tcg","Singles",2500,30,"🃏","Lote de comunes"],
- ["Deck de inicio – Fuego","tcg","Decks",32000,8,"🔥","Mazo armado de 60 cartas"],
- ["Deck de torneo – Psíquico","tcg","Decks",54000,3,"🔮","Mazo competitivo armado"],
- ["Core set Magic","tcg","Cores",45000,6,"📘","Set base para comenzar"],
- ["Core set Yu-Gi-Oh!","tcg","Cores",39000,0,"📗","Estructura base"],
- ["Playmat 60×35 cm","comp","Playmats",14500,15,"🟪","Neopreno, base antideslizante"],
- ["Playmat XL ilustrado","comp","Playmats",22000,7,"🖼️","Borde cosido, diseño exclusivo"],
- ["Set de dados D20 (7 u.)","comp","Dados",5500,30,"🎲","Poliédricos para rol y TCG"],
- ["Dados contadores de vida","comp","Dados",3200,20,"🎲","Pack x2 D20 grandes"],
- ["Fundas estándar (100 u.)","comp","Fundas",5200,50,"🛡️","Tamaño 66×91 mm"],
- ["Fundas mate premium (100 u.)","comp","Fundas",8900,18,"🛡️","Doble funda para torneos"],
- ["Carpeta 360 cartas","comp","Carpetas",16500,9,"📒","Con cierre y hojas de 9 bolsillos"],
- ["Caja porta mazo","comp","Otros",4500,22,"🗃️","Para 100 cartas con funda"],
- ["Catán","mesa","Estrategia",68000,4,"🏝️","3 a 4 jugadores, 90 min"],
- ["Carcassonne","mesa","Estrategia",42000,5,"🏰","2 a 5 jugadores, 35 min"],
- ["Uno","mesa","Cartas",6500,25,"🟥","Clásico para toda la familia"],
- ["Dixit","mesa","Familiares",47000,3,"🌙","Creatividad, 3 a 6 jugadores"],
- ["Pandemic","mesa","Cooperativos",64000,2,"🧪","Cooperativo, 2 a 4 jugadores"]
-].map((a,i)=>({id:i+1,n:a[0],c:a[1],s:a[2],p:a[3],st:a[4],e:a[5],d:a[6]}));
+// ===== CONFIG: datos del local =====
+const CONFIG={nombre:"El Atico de Hisui",whatsapp:"5492944000000" /* PLACEHOLDER: poner el real */,alias:"hisui.ejemplo.mp",
+ instagram:"https://www.instagram.com/el.atico.de.hisui.sma/",GA_ID:"",CLARITY_ID:"",
+ horario:{1:[16,21],2:[16,21],3:[16,21],4:[16,21],5:[16,21],6:[16,21]},envioGratis:100};
+const KEY="hisui_demo_v2",IMG="https://aticodehisui.com/cdn/shop/files/";
+const AREAS={tcg:"TCG",comp:"Complementos",mesa:"Juegos de mesa",uni:"Únicos y coleccionables"};
+const GAMES=["Todos","Pokémon","Yu-Gi-Oh!","Magic","Digimon","One Piece","Mitos y Leyendas","Lairen TCG","Star Wars Unlimited","Riftbound"];
+const TIPOS=["Todo","Sobres","Cajas y ETB","Singles","Decks","Cores"];
+const SUBS=["Todo","Carpetas","Fundas y folios","Playmats","Dados","Otros"];
+const MESA=["Todo","Estrategia","Familiares","Cartas","Cooperativos"];
+// [nombre, área, juego|-, tipo|sub, USD, stock, imagen, real(1)/ejemplo(0)]
+const D=[
+["30 Aniversario ETB","tcg","Pokémon","Cajas y ETB",225,3,"ETB30AIV.webp",1],
+["30 Aniversario Bundle Español","tcg","Pokémon","Cajas y ETB",110,5,"BUNDLE.jpg",1],
+["30 Aniversario Sylveon Box","tcg","Pokémon","Cajas y ETB",105,4,"SYLVEONEX.jpg",1],
+["30 Aniversario Mini Tins","tcg","Pokémon","Cajas y ETB",50,8,"MINITINS.webp",1],
+["Charizard Promo Box","tcg","Pokémon","Cajas y ETB",115,3,"CHARIZARDPROMOBOX.jpg",1],
+["Cynthia Garchomp Premium Box","tcg","Pokémon","Cajas y ETB",135,2,"CYNTHIABOX.jpg",1],
+["Umbreon Espeon Premium Box Español","tcg","Pokémon","Cajas y ETB",265,1,"premiumfigureespeonumbreon.jpg",1],
+["Ascended Heroes ETB Español","tcg","Pokémon","Cajas y ETB",165,4,"ETBASCENDEDHEROES.jpg",1],
+["Chaos Rising ETB","tcg","Pokémon","Cajas y ETB",140,4,"Pokemon_TCG_Mega_Evolution_Chaos_Rising_Elite_Trainer_Box-scaled-1.png",1],
+["Perfect Order ETB","tcg","Pokémon","Cajas y ETB",140,3,"etbperfectorder.jpg",1],
+["Tin Mega Charizard Y EX","tcg","Pokémon","Cajas y ETB",95,6,"megacharizardy.jpg",1],
+["Perfect Order Booster Pack","tcg","Pokémon","Sobres",11.5,60,"perfectbooster.jpg",1],
+["Team Rocket Mewtwo EX – League Battle Deck","tcg","Pokémon","Decks",70,5,"mewtwodeck.jpg",1],
+["Paquete Mega Pack 2025","tcg","Yu-Gi-Oh!","Cajas y ETB",50,10,"yugiohmegapackbundle.webp",1],
+["Single holo rara (ejemplo)","tcg","Pokémon","Singles",6.5,12,"",0],
+["Single ultra rara (ejemplo)","tcg","Pokémon","Singles",18,4,"",0],
+["Structure Deck (ejemplo)","tcg","Yu-Gi-Oh!","Decks",22,6,"",0],
+["Core set (ejemplo)","tcg","Magic","Cores",45,5,"",0],
+["Sobre booster (ejemplo)","tcg","One Piece","Sobres",5.5,30,"",0],
+["Starter deck (ejemplo)","tcg","Digimon","Decks",14,0,"",0],
+["Carpeta TopDeck Premium 160 espacios azul","comp","-","Carpetas",40,6,"carpetatopdeck160premiumazul.png",1],
+["Carpeta TopDeck Premium 360 espacios negro","comp","-","Carpetas",62,4,"carpetatopdeck360premiumnegra.jpg",1],
+["Carpeta TopDeck Premium 480 espacios blanco","comp","-","Carpetas",87.5,2,"carpeta480topdeckblanca.png",1],
+["Carpeta TopDeck 360 espacios azul","comp","-","Carpetas",48,5,"carpetatopdeck360azul.png",1],
+["Folios 9 bolsillos UltraPro","comp","-","Fundas y folios",1.25,100,"ultraprofoliosdecarpeta.png",1],
+["Folios TopDeck SMALL rojos","comp","-","Fundas y folios",9,25,"TOPDECKSMALLROJOS.png",1],
+["Folios TopDeck Premium STANDARD azules","comp","-","Fundas y folios",14,20,"TOPDECKPREMIUMAZULES.jpg",1],
+["Playmat 60×35 cm (ejemplo)","comp","-","Playmats",22,10,"",0],
+["Set de dados D20 (ejemplo)","comp","-","Dados",8,25,"",0],
+["Porta mazo (ejemplo)","comp","-","Otros",7,15,"",0],
+["Catán (ejemplo)","mesa","-","Estrategia",95,3,"",0],
+["Carcassonne (ejemplo)","mesa","-","Estrategia",60,4,"",0],
+["Uno (ejemplo)","mesa","-","Cartas",9,20,"",0],
+["Pandemic (ejemplo)","mesa","-","Cooperativos",90,2,"",0],
+["Artículo único (ejemplo)","uni","-","Otros",150,1,"",0],
+["Figura coleccionable (ejemplo)","uni","-","Otros",80,2,"",0]
+].map((a,i)=>({id:i+1,n:a[0],a:a[1],g:a[2],t:a[3],p:a[4],st:a[5],img:a[6],real:a[7]}));
 
-let S=load();let cart=S.cart||{};let sec="tcg",sub="Todo",role="c";
-function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r)}catch(e){}return{prods:JSON.parse(JSON.stringify(SEED)),manual:null,cart:{},orders:[]}}
+// [día 0=Dom…6=Sáb, hora, nombre, tipo, juego, inscripción USD, descripción]  (ejemplos)
+const ACT=[[1,"18:00","Escuela Pokémon","Escuela","Pokémon",0,"Aprendé a jugar desde cero. Hay mazos para prestar."],[2,"19:00","Torneo Yu-Gi-Oh! semanal","Torneo","Yu-Gi-Oh!",5,"Formato avanzado, premios en producto."],[3,"19:00","Noche de Magic Commander","Juego libre","Magic",0,"Mesas abiertas para jugar entre amigos."],[4,"18:00","Tarde de juegos de mesa","Juego libre","",0,"Probá Catán, Carcassonne y más."],[5,"19:00","Torneo Pokémon League","Torneo","Pokémon",8,"Ronda suiza, cupos limitados."],[6,"16:00","Escuela Digimon","Escuela","Digimon",0,"Primera clase gratis."],[6,"17:30","Draft One Piece","Torneo","One Piece",10,"Sobres incluidos."]].map((a,i)=>({id:i+1,w:a[0],h:a[1],t:a[2],type:a[3],g:a[4],pr:a[5],d:a[6]}));
+let S=load(),cart=S.cart||{},area="tcg",game="Todos",tipo="Todo",role="c";
+if(!S.acts)S.acts=JSON.parse(JSON.stringify(ACT));
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r)}catch(e){}return{prods:JSON.parse(JSON.stringify(D)),manual:null,cart:{},orders:[]}}
 function save(){S.cart=cart;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 const $=id=>document.getElementById(id);
-const money=n=>new Intl.NumberFormat("es-AR",{style:"currency",currency:"ARS",maximumFractionDigits:0}).format(n);
+const money=n=>new Intl.NumberFormat("es-AR",{style:"currency",currency:"USD"}).format(n);
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-
-// ----- Abierto / Cerrado -----
 function ahora(){const f=new Intl.DateTimeFormat("en-US",{timeZone:"America/Argentina/Buenos_Aires",weekday:"short",hour:"numeric",hour12:false}).formatToParts(new Date());
- const w=f.find(x=>x.type=="weekday").value,h=parseInt(f.find(x=>x.type=="hour").value)%24;
- return{d:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(w),h}}
+ return{d:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(f.find(x=>x.type=="weekday").value),h:parseInt(f.find(x=>x.type=="hour").value)%24}}
 function abierto(){if(S.manual==="cerrado")return false;const a=ahora(),r=CONFIG.horario[a.d];return !!r&&a.h>=r[0]&&a.h<r[1]}
-function estado(){const o=abierto(),b=$("estado");b.className="badge "+(o?"on":"off");b.textContent=o?"Abierto ahora":"Cerrado";
- $("btnAbrir").textContent=S.manual==="cerrado"?"Local cerrado manualmente · tocar para reabrir":"Cerrar el local ahora"}
+function estado(){const o=abierto(),b=$("estado");b.className="badge "+(o?"on":"off");b.textContent=o?"Abierto ahora":"Cerrado";$("btnAbrir").textContent=S.manual==="cerrado"?"Cerrado manualmente · tocar para reabrir":"Cerrar el local ahora"}
 function toggleManual(){S.manual=S.manual==="cerrado"?null:"cerrado";save();estado()}
 
-// ----- Tienda -----
-function renderTabs(){$("tabs").innerHTML=Object.keys(SECC).map(k=>`<button class="tab ${k==sec?"on-btn":""}" onclick="sec='${k}';sub='Todo';render()">${SECC[k]}</button>`).join("");
- $("chips").innerHTML=SUBS[sec].map(x=>`<button class="chip ${x==sub?"on-btn":""}" onclick="sub='${x}';render()">${x}</button>`).join("")}
-function render(){renderTabs();const q=$("q").value.toLowerCase();
- const l=S.prods.filter(p=>p.c==sec&&(sub=="Todo"||p.s==sub)&&(p.n+p.d).toLowerCase().includes(q));
- $("grid").innerHTML=l.length?l.map(p=>`<div class="p"><div class="pic">${p.e}</div><span class="tag">${esc(p.s)}</span><h3>${esc(p.n)}</h3><small>${esc(p.d)}</small><div class="price">${money(p.p)}</div>
- <button class="add" ${p.st<=0?"disabled":""} onclick="add(${p.id})">${p.st<=0?"Agotado":"Agregar"}</button></div>`).join(""):`<div class="empty" style="grid-column:1/-1">No hay productos en esta categoría todavía.</div>`;
- count();estado()}
+function chipsHtml(list,cur,fn){return list.map(x=>`<button class="chip ${x==cur?"sel":""}" onclick="${fn}('${x}')">${x}</button>`).join("")}
+function setG(x){game=x;render()}function setT(x){tipo=x;render()}
+function render(){
+ $("tabs").innerHTML=Object.keys(AREAS).map(k=>`<button class="tab ${k==area?"sel":""}" onclick="area='${k}';game='Todos';tipo='Todo';render()">${AREAS[k]}</button>`).join("");
+ const sub=area=="comp"?SUBS:area=="mesa"?MESA:["Todo","Otros"];
+ $("chips").innerHTML=area=="tcg"?chipsHtml(GAMES,game,"setG"):"";
+ $("chips2").innerHTML=chipsHtml(area=="tcg"?TIPOS:sub,tipo,"setT");
+ const q=$("q").value.toLowerCase();
+ const l=S.prods.filter(p=>p.a==area&&(game=="Todos"||p.g==game)&&(tipo=="Todo"||p.t==tipo)&&p.n.toLowerCase().includes(q));
+ $("grid").innerHTML=l.length?l.map(p=>`<div class="p"><div class="im">${p.img?`<img loading="lazy" alt="${esc(p.n)}" src="${IMG+p.img}?width=400" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="ph">🎴</div>`:`<div class="ph" style="display:grid">🎴</div>`}${p.real?"":'<span class="ej">Ejemplo</span>'}</div>
+ <span class="tag">${esc(p.g!="-"?p.g+" · ":"")}${esc(p.t)}</span><h3>${esc(p.n)}</h3><div class="price">${money(p.p)}</div>
+ <button class="add" ${p.st<=0?"disabled":""} onclick="add(${p.id})">${p.st<=0?"Agotado":"Agregar"}</button></div>`).join(""):`<div class="empty">Todavía no hay productos en esta categoría. Pronto vamos a sumar más.</div>`;
+ count();estado();agenda()}
 function add(id){const p=S.prods.find(x=>x.id==id);if((cart[id]||0)>=p.st)return alert("No hay más stock de este producto.");cart[id]=(cart[id]||0)+1;save();count();ev("add_to_cart")}
 function count(){$("cn").textContent=Object.values(cart).reduce((a,b)=>a+b,0)}
 function total(){return Object.entries(cart).reduce((a,[id,q])=>a+q*(S.prods.find(p=>p.id==id)?.p||0),0)}
-function sheet(h){$("shc").innerHTML=h;$("sh").classList.add("show")}
-function closeSheet(){$("sh").classList.remove("show")}
+function sheet(h){$("shc").innerHTML=h;$("sh").classList.add("show")}function closeSheet(){$("sh").classList.remove("show")}
 $("sh").addEventListener("click",e=>{if(e.target.id=="sh")closeSheet()});
+function envioBar(){const t=total(),f=CONFIG.envioGratis;return t>=f?`<small>🚚 ¡Tenés envío gratis!</small><div class="bar"><i style="width:100%"></i></div>`:`<small>Te faltan ${money(f-t)} para el envío gratis</small><div class="bar"><i style="width:${t/f*100}%"></i></div>`}
 function openCart(){const ids=Object.keys(cart);
  if(!ids.length)return sheet(`<h2>Tu pedido</h2><div class="empty">Todavía no agregaste nada. Elegí algo de la tienda.</div><button class="big" style="background:var(--ac)" onclick="closeSheet()">Ir a la tienda</button>`);
- sheet(`<h2>Tu pedido</h2>`+ids.map(id=>{const p=S.prods.find(x=>x.id==id);return `<div class="row"><div><b>${esc(p.n)}</b><br><small>${money(p.p)}</small></div><div class="qty"><button onclick="chg(${id},-1)">−</button> ${cart[id]} <button onclick="chg(${id},1)">+</button></div></div>`}).join("")+
- `<div class="row"><b>Subtotal</b><b>${money(total())}</b></div><button class="big" onclick="checkout()">Finalizar pedido</button>`)}
-function chg(id,d){const p=S.prods.find(x=>x.id==id);cart[id]=(cart[id]||0)+d;if(cart[id]>p.st)cart[id]=p.st;if(cart[id]<=0)delete cart[id];save();count();openCart()}
+ sheet(`<h2>Tu pedido</h2>`+ids.map(id=>{const p=S.prods.find(x=>x.id==id);return `<div class="row"><div><b>${esc(p.n)}</b><br><small>${money(p.p)}</small></div><div class="qty"><button onclick="chg(${id},-1)">−</button> ${cart[id]} <button onclick="chg(${id},1)">+</button></div></div>`}).join("")+envioBar()+`<div class="row"><b>Subtotal</b><b>${money(total())}</b></div><button class="big" onclick="checkout()">Finalizar pedido</button>`)}
+function chg(id,d){const p=S.prods.find(x=>x.id==id);cart[id]=Math.min((cart[id]||0)+d,p.st);if(cart[id]<=0)delete cart[id];save();count();openCart()}
 function checkout(){ev("begin_checkout");
- sheet(`<h2>Finalizar pedido</h2>
- ${abierto()?"":`<div class="box" style="color:var(--ac2)">El local está cerrado. Podés dejar el pedido programado y lo confirmamos al abrir.</div>`}
- <label>Entrega</label><select id="ent" onchange="upd()"><option value="Retiro en el local">Retiro en el local</option><option value="Envío">Envío (${money(CONFIG.envio)})</option></select>
- <div id="dirw" style="display:none"><label>Dirección</label><input id="dir" placeholder="Calle y número"></div>
- <label>Medio de pago</label><select id="pag" onchange="upd()"><option>Efectivo</option><option>Transferencia</option><option>Mercado Pago</option></select>
- <div id="pagx" class="sim"></div>
- <label>Nombre</label><input id="nom" placeholder="Tu nombre">
- <label>Teléfono</label><input id="tel" inputmode="tel" placeholder="2944…">
- <label>Notas</label><textarea id="not" rows="2"></textarea>
- <div class="row"><b>Total</b><b id="tot"></b></div>
- <button class="big" onclick="confirmar()">Confirmar pedido por WhatsApp</button>`);upd()}
-function upd(){const env=$("ent").value=="Envío";$("dirw").style.display=env?"block":"none";$("tot").textContent=money(total()+(env?CONFIG.envio:0));
- const p=$("pag").value;$("pagx").innerHTML=p=="Transferencia"?`Alias: <b>${CONFIG.alias}</b> · CBU: ${CONFIG.cbu}`:p=="Mercado Pago"?`Te enviamos el link de pago por WhatsApp. <i>Simulado en la demo</i>`:"Pagás al recibir."}
-function confirmar(){const n=$("nom").value.trim(),t=$("tel").value.trim(),env=$("ent").value=="Envío",d=$("dir")?$("dir").value.trim():"";
+ sheet(`<h2>Finalizar pedido</h2>${abierto()?"":`<div class="box" style="color:var(--ac)">El local está cerrado. Podés dejar el pedido y lo confirmamos al abrir.</div>`}
+ <label>Entrega</label><select id="ent" onchange="upd()"><option>Retiro en el local</option><option>Envío (se coordina por WhatsApp)</option></select>
+ <div id="dirw" style="display:none"><label>Dirección y localidad</label><input id="dir"></div>
+ <label>Medio de pago</label><select id="pag" onchange="upd()"><option>Efectivo</option><option>Transferencia</option><option>Mercado Pago</option></select><small id="pagx"></small>
+ <label>Nombre</label><input id="nom"><label>Teléfono</label><input id="tel" inputmode="tel"><label>Notas</label><textarea id="not" rows="2"></textarea>
+ <div class="row"><b>Total (USD)</b><b>${money(total())}</b></div><button class="big" onclick="confirmar()">Confirmar pedido por WhatsApp</button>`);upd()}
+function upd(){$("dirw").style.display=$("ent").value.startsWith("Env")?"block":"none";const p=$("pag").value;
+ $("pagx").innerHTML=p=="Transferencia"?`Alias: <b>${CONFIG.alias}</b> (ejemplo)`:p=="Mercado Pago"?"Te enviamos el link de pago por WhatsApp. <i>Simulado en la demo</i>":"Pagás al retirar."}
+function confirmar(){const n=$("nom").value.trim(),t=$("tel").value.trim(),env=$("ent").value.startsWith("Env"),d=$("dir").value.trim();
  if(!n||!t||(env&&!d))return alert("Completá nombre, teléfono y dirección si es envío.");
  const items=Object.entries(cart).map(([id,q])=>{const p=S.prods.find(x=>x.id==id);p.st=Math.max(0,p.st-q);return `• ${q} x ${p.n} — ${money(p.p*q)}`});
- const tot=total()+(env?CONFIG.envio:0);
- const msg=`Hola ${CONFIG.nombre}! Quiero hacer un pedido:\n${items.join("\n")}\n\nEntrega: ${$("ent").value}${env?" ("+d+")":""}\nPago: ${$("pag").value}\nTotal: ${money(tot)}\nNombre: ${n}\nTel: ${t}${$("not").value?"\nNotas: "+$("not").value:""}`;
+ const tot=total();
+ const msg=`Hola ${CONFIG.nombre}! Quiero hacer un pedido:\n${items.join("\n")}\n\nTotal: ${money(tot)}\nEntrega: ${$("ent").value}${env?" ("+d+")":""}\nPago: ${$("pag").value}\nNombre: ${n}\nTel: ${t}${$("not").value?"\nNotas: "+$("not").value:""}`;
  S.orders.unshift({f:new Date().toLocaleString("es-AR",{timeZone:"America/Argentina/Buenos_Aires",hour12:false}),n,tot,est:"Recibido"});
- cart={};save();ev("purchase");closeSheet();render();
- window.open("https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(msg),"_blank")}
+ cart={};save();ev("purchase");closeSheet();render();window.open("https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(msg),"_blank")}
 function openOrders(){sheet(`<h2>Mi pedido</h2>`+(S.orders.length?S.orders.slice(0,5).map(o=>`<div class="row"><div>${o.f}<br><small>${money(o.tot)}</small></div><b>${o.est}</b></div>`).join(""):`<div class="empty">Todavía no hiciste pedidos.</div>`)+`<button class="big" style="background:var(--ac)" onclick="closeSheet()">Cerrar</button>`)}
 function go(){closeSheet();setRole("c");window.scrollTo({top:0,behavior:"smooth"})}
 
-// ----- Panel -----
 function setRole(r){role=r;$("cliente").style.display=r=="c"?"":"none";$("panel").style.display=r=="p"?"":"none";$("bot").style.display=r=="c"?"flex":"none";
- $("rC").classList.toggle("on-btn",r=="c");$("rP").classList.toggle("on-btn",r=="p");r=="p"?renderPanel():render()}
-function renderPanel(){estado();$("tb").innerHTML=S.prods.map(p=>`<tr><td>${esc(p.n)}</td><td><input type="number" value="${p.p}" onchange="ed(${p.id},'p',this.value)"></td><td><input type="number" value="${p.st}" onchange="ed(${p.id},'st',this.value)" style="width:64px"></td><td><button onclick="del(${p.id})" aria-label="Borrar">🗑️</button></td></tr>`).join("");
- $("ped").innerHTML=S.orders.length?S.orders.map((o,i)=>`<div class="row"><div>${o.n}<br><small>${o.f} · ${money(o.tot)}</small></div><select style="width:130px" onchange="S.orders[${i}].est=this.value;save()">${["Recibido","En preparación","Listo","Entregado"].map(e=>`<option ${e==o.est?"selected":""}>${e}</option>`).join("")}</select></div>`).join(""):`<div class="empty">Todavía no hay pedidos. Hacé uno desde la vista cliente.</div>`}
+ $("rC").classList.toggle("sel",r=="c");$("rP").classList.toggle("sel",r=="p");r=="p"?renderPanel():render()}
+function renderPanel(){estado();actPanel();$("tb").innerHTML=S.prods.map(p=>`<tr><td>${esc(p.n)}</td><td><input type="number" step="0.5" value="${p.p}" onchange="ed(${p.id},'p',this.value)"></td><td><input type="number" value="${p.st}" style="width:60px" onchange="ed(${p.id},'st',this.value)"></td><td><button onclick="del(${p.id})" aria-label="Borrar">🗑️</button></td></tr>`).join("");
+ $("ped").innerHTML=S.orders.length?S.orders.map((o,i)=>`<div class="row"><div>${esc(o.n)}<br><small>${o.f} · ${money(o.tot)}</small></div><select style="width:130px" onchange="S.orders[${i}].est=this.value;save()">${["Recibido","En preparación","Listo","Entregado"].map(e=>`<option ${e==o.est?"selected":""}>${e}</option>`).join("")}</select></div>`).join(""):`<div class="empty">Todavía no hay pedidos. Hacé uno desde la vista cliente.</div>`}
 function ed(id,k,v){S.prods.find(p=>p.id==id)[k]=Math.max(0,+v||0);save()}
 function del(id){if(confirm("¿Borrar este producto?")){S.prods=S.prods.filter(p=>p.id!=id);delete cart[id];save();renderPanel()}}
-function nuevo(){const n=prompt("Nombre del producto");if(!n)return;const c=prompt("Sección: tcg, comp o mesa","tcg");if(!SECC[c])return alert("Sección no válida");
- const p=+prompt("Precio en pesos","1000");S.prods.push({id:Date.now(),n,c,s:SUBS[c][1],p:p||0,st:10,e:"🆕",d:"Producto nuevo"});save();renderPanel()}
-function masivo(){const k=$("mCat").value,pc=+$("mPct").value;if(!pc)return;S.prods.forEach(p=>{if(k=="all"||p.c==k)p.p=Math.round(p.p*(1+pc/100)/50)*50});save();renderPanel();alert("Precios actualizados.")}
-function resetAll(){if(!confirm("¿Restablecer los datos de ejemplo?"))return;try{localStorage.removeItem(KEY)}catch(e){}S={prods:JSON.parse(JSON.stringify(SEED)),manual:null,cart:{},orders:[]};cart={};setRole(role)}
+function nuevo(){const n=prompt("Nombre del producto");if(!n)return;const a=prompt("Sección: tcg, comp, mesa o uni","tcg");if(!AREAS[a])return alert("Sección no válida");
+ const g=a=="tcg"?(prompt("Juego exacto (ej.: Pokémon, Magic, One Piece)","Pokémon")||"-"):"-";const t=prompt("Tipo (ej.: Sobres, Singles, Playmats, Dados, Estrategia)","Otros")||"Otros";
+ const p=+prompt("Precio en USD","10");S.prods.push({id:Date.now(),n,a,g,t,p:p||0,st:10,img:"",real:1});save();renderPanel()}
+function masivo(){const k=$("mCat").value,pc=+$("mPct").value;if(!pc)return;S.prods.forEach(p=>{if(k=="all"||p.a==k)p.p=Math.round(p.p*(1+pc/100)*2)/2});save();renderPanel();alert("Precios actualizados.")}
+function resetAll(){if(!confirm("¿Restablecer los datos de ejemplo?"))return;try{localStorage.removeItem(KEY)}catch(e){}S={prods:JSON.parse(JSON.stringify(D)),manual:null,cart:{},orders:[],acts:JSON.parse(JSON.stringify(ACT))};cart={};setRole(role)}
 
-// ----- Medición (solo carga si hay ID y el usuario aceptó) -----
-function ev(n){try{if(window.gtag)gtag("event",n,{currency:"ARS"})}catch(e){}}
+const DIAS=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"],DC=["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"];
+function agenda(){const hoy=ahora().d;const l=[...S.acts].sort((a,b)=>((a.w-hoy+7)%7)-((b.w-hoy+7)%7)||a.h.localeCompare(b.h));
+ $("acts").innerHTML=l.length?l.map(a=>{const k=(a.w-hoy+7)%7,dl=k==0?"Hoy":k==1?"Mañana":DIAS[a.w];return `<div class="act ${k==0?"hoy":""}"><span class="dia">${dl} · ${a.h} hs</span><span class="tag">${esc(a.type)}${a.g?" · "+esc(a.g):""}</span><h3>${esc(a.t)}</h3><small>${esc(a.d)}</small><b>${a.pr>0?"Inscripción "+money(a.pr):"Gratis"}</b><button class="add" onclick="anotar(${a.id})">Anotarme</button></div>`}).join(""):`<div class="empty">Esta semana todavía no cargamos actividades.</div>`}
+function anotar(id){const a=S.acts.find(x=>x.id==id);ev("click_whatsapp");window.open("https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(`Hola ${CONFIG.nombre}! Me quiero anotar a: ${a.t} (${DIAS[a.w]} ${a.h} hs).`),"_blank")}
+function irTienda(){closeSheet();setRole("c");$("tabs").scrollIntoView({behavior:"smooth"})}
+function actPanel(){$("atb").innerHTML=S.acts.map(a=>`<div class="row"><div><b>${esc(a.t)}</b><br><small>${DC[a.w]} ${a.h} · ${esc(a.type)} · ${a.pr>0?money(a.pr):"Gratis"}</small></div><button onclick="delAct(${a.id})" aria-label="Borrar">🗑️</button></div>`).join("")||`<div class="empty">Todavía no cargaste actividades.</div>`}
+function nuevaAct(){const t=prompt("Nombre de la actividad (ej.: Torneo Pokémon)");if(!t)return;const w=+prompt("Día: 0=Dom, 1=Lun, 2=Mar, 3=Mié, 4=Jue, 5=Vie, 6=Sáb","5");if(!(w>=0&&w<=6))return alert("Día no válido");const h=prompt("Hora (ej.: 19:00)","19:00");if(!/^\d{1,2}:\d{2}$/.test(h||""))return alert("Hora no válida");const type=prompt("Tipo: Torneo, Escuela, Juego libre o Evento","Torneo")||"Torneo";const pr=+prompt("Inscripción en USD (0 si es gratis)","0")||0;const d=prompt("Descripción corta","")||"";S.acts.push({id:Date.now(),w,h:h.padStart(5,"0"),t,type,g:"",pr,d});save();actPanel();agenda()}
+function delAct(id){if(confirm("¿Borrar esta actividad?")){S.acts=S.acts.filter(a=>a.id!=id);save();actPanel();agenda()}}
+function ev(n){try{if(window.gtag)gtag("event",n,{currency:"USD"})}catch(e){}}
 function cookie(v){try{localStorage.setItem("hisui_ck",v)}catch(e){}$("ck").style.display="none";if(v=="si")medir()}
 function medir(){if(CONFIG.GA_ID){const s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id="+CONFIG.GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config",CONFIG.GA_ID)}
  if(CONFIG.CLARITY_ID){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script",CONFIG.CLARITY_ID)}}
-(function(){let v=null;try{v=localStorage.getItem("hisui_ck")}catch(e){}
- if(CONFIG.GA_ID||CONFIG.CLARITY_ID){if(v=="si")medir();else if(!v)$("ck").style.display="block"}})();
-
+(function(){let v=null;try{v=localStorage.getItem("hisui_ck")}catch(e){}if(CONFIG.GA_ID||CONFIG.CLARITY_ID){if(v=="si")medir();else if(!v)$("ck").style.display="block"}})();
 $("fw").href="https://wa.me/5492944242906?text="+encodeURIComponent("Hola Fausto, vi el sistema de "+CONFIG.nombre+" y quiero consultar");
+$("ig").href=CONFIG.instagram;
 render();
 </script>
 </body>
