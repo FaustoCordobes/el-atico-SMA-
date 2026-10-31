@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>El Ático de Hisui — Tienda TCG en San Martín de los Andes</title>
+<title>El Ático de Hisui SMA — Tienda TCG en San Martín de los Andes</title>
 <meta name="description" content="Tienda de juegos de cartas coleccionables en San Martín de los Andes: Pokémon, Yu-Gi-Oh!, Magic, Digimon, One Piece, Mitos y Leyendas y más. Torneos semanales, clases y envíos a todo el país.">
 <meta name="theme-color" content="#C53030">
 <!-- Google Search Console: pegá acá tu código de verificación -->
 <!-- <meta name="google-site-verification" content="PEGAR-CODIGO-AQUI"> -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="El Ático de Hisui — Tienda TCG">
+<meta property="og:title" content="El Ático de Hisui SMA — Tienda TCG">
 <meta property="og:description" content="Cartas, sobres, mazos, accesorios y torneos semanales en San Martín de los Andes. Comprá online y retirá en el local o recibilo en tu casa.">
 <meta property="og:locale" content="es_AR">
 <!-- og:image: subir una imagen 1200x630 y poner su URL completa -->
 <!-- <meta property="og:image" content="https://aticodehisui.com/og.jpg"> -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Store","name":"El Ático de Hisui","description":"Tienda de juegos de cartas coleccionables, juegos de mesa y torneos","address":{"@type":"PostalAddress","addressLocality":"San Martín de los Andes","addressRegion":"Neuquén","addressCountry":"AR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"14:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"16:00","closes":"21:00"}],"currenciesAccepted":"ARS"}
+{"@context":"https://schema.org","@type":"Store","name":"El Ático de Hisui SMA","description":"Tienda de juegos de cartas coleccionables, juegos de mesa y torneos","address":{"@type":"PostalAddress","addressLocality":"San Martín de los Andes","addressRegion":"Neuquén","addressCountry":"AR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"14:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"16:00","closes":"21:00"}],"currenciesAccepted":"ARS"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +67,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--tinta)}
 .logo span{display:flex;flex-direction:column;line-height:1}
 .logo b{font-family:var(--f-tit);font-size:1.3rem;font-weight:800;letter-spacing:-.01em}
-.logo small{font-family:var(--f-tit);font-size:.9rem;color:var(--rojo-btn);font-weight:700;margin-top:2px}
+.logo .sma{display:inline-block;line-height:1.2;background:var(--rojo-btn);color:#fff;border-radius:5px;padding:1px 6px;font-size:.72rem;letter-spacing:.06em;margin-left:3px;vertical-align:1px}
+.logo small{white-space:nowrap;font-family:var(--f-tit);font-size:.9rem;color:var(--rojo-btn);font-weight:700;margin-top:2px}
 .buscador{flex:1;display:flex;max-width:460px;margin-left:auto;border:1px solid var(--borde);border-radius:999px;overflow:hidden;background:var(--suave)}
 .buscador input{flex:1;border:0;background:none;padding:10px 16px;min-width:0;min-height:42px}
 .buscador input:focus{outline:none}
@@ -132,6 +133,32 @@ main{min-height:60vh}
 .juego b{font-family:var(--f-tit);font-size:1.02rem;position:relative}
 .juego small{opacity:.9;font-size:.78rem;position:relative}
 .juego::after{content:"";position:absolute;right:-18px;top:-18px;width:70px;height:96px;border-radius:10px;border:3px solid #ffffff55;transform:rotate(18deg)}
+
+/* ---------- Calendario arriba de todo ---------- */
+.cal-top{background:linear-gradient(180deg,#FFF5F5,#fff);padding-top:26px;padding-bottom:30px;border-bottom:1px solid var(--borde)}
+
+/* ---------- Banner novedad, bienvenida, comunidad ---------- */
+.promo{display:grid;grid-template-columns:1.2fr .8fr;border-radius:18px;overflow:hidden;background:linear-gradient(120deg,#1A202C,#44337A);color:#fff;margin-top:8px}
+.promo-txt{padding:30px}
+.promo-txt h2{color:#fff} .promo-txt p{color:#E2E8F0;margin:0 0 16px}
+.promo-img{min-height:220px} .promo-img img{width:100%;height:100%;object-fit:cover}
+.bienv{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center}
+.bienv p{font-size:1.02rem}
+.bienv-box{background:var(--rojo-suave);border:1px solid #FEB2B2;border-radius:16px;padding:22px}
+.bienv-box b{font-family:var(--f-tit);font-size:1.15rem;color:var(--rojo-osc)}
+.grupos{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.grupo{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;border:1px solid var(--borde);border-left:5px solid var(--c);background:#fff;text-decoration:none;cursor:pointer;text-align:left;min-height:56px}
+.grupo:hover{box-shadow:var(--sombra)}
+.grupo b{display:block;color:var(--tinta);font-size:.92rem} .grupo small{color:var(--gris);font-size:.76rem}
+.g-ic{width:34px;height:34px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;flex:none}
+.g-ic svg{width:18px;height:18px}
+.red-card{display:flex;align-items:center;gap:14px;padding:18px;border-radius:16px;text-decoration:none;color:#fff;min-height:84px}
+.red-card b{display:block;font-family:var(--f-tit);font-size:1.1rem} .red-card small{opacity:.92}
+.red-card.ig{background:linear-gradient(120deg,#833AB4,#C13584 50%,#E1306C 75%,#F77737)}
+.red-card.gg{background:#fff;color:var(--tinta);border:1px solid var(--borde)} .red-card.gg small{color:var(--gris)}
+.r-ic{width:46px;height:46px;border-radius:12px;background:#ffffff33;display:grid;place-items:center;flex:none}
+.r-ic.estrellas{background:#FEFCBF;color:#D69E2E;width:auto;padding:0 10px;font-size:1rem;letter-spacing:1px}
+.r-go{margin-left:auto;font-weight:700;white-space:nowrap}
 
 /* ---------- Tarjetas producto ---------- */
 .grilla{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
@@ -228,6 +255,7 @@ main{min-height:60vh}
 .banda{background:linear-gradient(120deg,var(--rojo-btn),#7B1F1F);color:#fff;border-radius:18px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .banda h2{color:#fff;margin:0 0 6px}
 .banda p{margin:0;color:#FED7D7}
+.banda .btn{color:var(--tinta)}
 .tabla-h{width:100%;border-collapse:collapse}
 .tabla-h td{padding:9px 4px;border-bottom:1px solid var(--borde)}
 .tabla-h tr.hoy td{font-weight:700;color:var(--rojo-osc)}
@@ -361,6 +389,11 @@ table.tbl{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
   .hero .wrap{grid-template-columns:1fr;padding-top:32px;padding-bottom:32px}
   .hero-art{display:none}
   .beneficios{grid-template-columns:1fr 1fr}
+  .promo,.bienv{grid-template-columns:1fr}
+  .promo-txt{padding:22px} .promo-img{min-height:160px;order:-1}
+  .red-card .r-go{display:none}
+  .grupos{grid-template-columns:1fr 1fr;gap:8px}
+  .grupo{padding:10px;gap:8px} .grupo small{display:none} .g-ic{width:28px;height:28px}
   .grilla{grid-template-columns:repeat(2,1fr);gap:10px}
   .juegos{grid-template-columns:repeat(2,1fr)}
   .cat-layout{grid-template-columns:1fr}
@@ -414,7 +447,7 @@ const CONFIG = {
 };
 
 /* ---------- Almacenamiento seguro (funciona aunque localStorage falle) ---------- */
-const KEY = 'aticoHisui_beta_v1';
+const KEY = 'aticoHisui_beta_v3';
 const memoria = {};
 function sGet(k){ try{ const v = localStorage.getItem(k); return v === null ? (memoria[k] ?? null) : v; }catch(e){ return memoria[k] ?? null; } }
 function sSet(k,v){ memoria[k] = v; try{ localStorage.setItem(k,v); return true; }catch(e){ return false; } }
@@ -447,6 +480,7 @@ const I = {
   carta:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6"/></svg>',
   pin:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>',
   reloj:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  ig:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>',
   wa:'<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.4c-.1.1-.2.3-.1.5.2.3.7 1.2 1.6 2 1.1.9 2 1.2 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.7-.2 1.3z"/></svg>'
 };
 function logoSvg(sz=40){
@@ -547,30 +581,39 @@ function seed(){
     desc: descPorTipo(r[2], r[7].includes('p')), img:'',
     ventas: (i*37 % 23) + (r[7].includes('d') ? 15 : 0), alta: ahora - (P.length - i) * 86400000
   }));
+  // Calendario real de El Ático de Hisui SMA (tomado de aticodehisui.com). Costos y cupos: a confirmar por el local.
   const eventos = [
-    {id:'e1',dia:2,hora:'19:00',juego:'yugioh',nombre:'Torneo semanal Yu-Gi-Oh!',formato:'Avanzado · suizo',costo:3000,cupo:24,premio:'Sobres según posición'},
-    {id:'e2',dia:3,hora:'19:00',juego:'onepiece',nombre:'Torneo One Piece Card Game',formato:'Estándar',costo:3000,cupo:16,premio:'Sobres + promo'},
-    {id:'e3',dia:4,hora:'18:00',juego:'pokemon',nombre:'Liga Pokémon TCG',formato:'Estándar · suma puntos',costo:2500,cupo:32,premio:'Puntos de liga'},
-    {id:'e4',dia:5,hora:'19:00',juego:'digimon',nombre:'Torneo Digimon Card Game',formato:'Estándar',costo:3000,cupo:16,premio:'Sobres'},
-    {id:'e5',dia:5,hora:'20:30',juego:'magic',nombre:'Noche de Commander',formato:'Casual · mesas de 4',costo:0,cupo:20,premio:'Juego libre'},
-    {id:'e6',dia:6,hora:'16:00',juego:'pokemon',nombre:'Torneo Pokémon TCG del sábado',formato:'Estándar · suizo',costo:3500,cupo:32,premio:'Sobres + playmat'},
-    {id:'e7',dia:6,hora:'18:30',juego:'swu',nombre:'Torneo Star Wars: Unlimited',formato:'Premier',costo:3000,cupo:16,premio:'Sobres'},
-    {id:'e8',dia:0,hora:'17:00',juego:'myl',nombre:'Noche de testeo Mitos y Leyendas',formato:'Casual',costo:0,cupo:20,premio:'—'},
-    {id:'e9',dia:0,hora:'18:00',juego:'lairen',nombre:'Torneo Lairen TCG',formato:'Estándar',costo:2500,cupo:16,premio:'Sobres'}
+    {id:'e1',dia:2,hora:'20:00',fin:'22:00',juego:'myl',nombre:'Martes de Mitos y Leyendas',formato:'Jornada de testeo y enseñanza',costo:0,cupo:0,premio:''},
+    {id:'e2',dia:3,hora:'18:00',fin:'20:00',juego:'yugioh',nombre:'Yu-Gi-Oh!',formato:'Torneo oficial',costo:0,cupo:0,premio:''},
+    {id:'e3',dia:4,hora:'19:00',fin:'22:00',juego:'onepiece',nombre:'One Piece',formato:'Torneo oficial',costo:0,cupo:0,premio:''},
+    {id:'e4',dia:5,hora:'18:00',fin:'23:00',juego:'pokemon',nombre:'Torneos Pokémon Tanocup',formato:'Liga Pokémon de TCG',costo:0,cupo:0,premio:''},
+    {id:'e5',dia:6,hora:'16:00',fin:'19:00',juego:'swu',nombre:'Star Wars Unlimited',formato:'Torneo oficial',costo:0,cupo:0,premio:''},
+    {id:'e6',dia:6,hora:'17:00',fin:'20:00',juego:'digimon',nombre:'Digimon Torneos',formato:'DigiTorneo',costo:0,cupo:0,premio:''},
+    {id:'e7',dia:6,hora:'18:00',fin:'21:00',juego:'lairen',nombre:'Liga Lairén',formato:'Torneo Modern',costo:0,cupo:0,premio:''}
   ];
+  // Las clases también aparecen en el calendario semanal
   const clases = [
-    {id:'c1',titulo:'Pokémon TCG para chicos',para:'De 7 a 12 años',dia:6,hora:'14:30',precio:5000,cupo:10,desc:'Aprenden a jugar desde cero con mazos del local: reglas, turnos y cómo armar su primer mazo. Clase tranquila y divertida.'},
-    {id:'c2',titulo:'Pokémon TCG para adolescentes',para:'De 13 a 17 años',dia:3,hora:'17:30',precio:5000,cupo:10,desc:'Para quienes ya conocen lo básico y quieren mejorar: estrategia, armado de mazo y preparación para la liga.'},
-    {id:'c3',titulo:'Pokémon TCG para adultos',para:'Mayores de 18',dia:4,hora:'20:30',precio:6000,cupo:12,desc:'¿Siempre quisiste aprender? Te enseñamos desde cero en un ambiente relajado. Ideal para jugar con tus hijos o amigos.'}
+    {id:'c1',titulo:'Escuelita Pokémon',para:'Niños de 8 a 11 años',dia:2,hora:'16:00',fin:'18:00',precio:0,cupo:0,desc:'Enseñanza de Pokémon TCG para chicos: aprenden a jugar desde cero, con reglas, turnos y cómo armar su primer mazo.'},
+    {id:'c2',titulo:'Academia Pokémon',para:'Adultos',dia:2,hora:'18:00',fin:'20:00',precio:0,cupo:0,desc:'Enseñanza de Pokémon TCG para adultos. ¿Siempre quisiste aprender? Te enseñamos en un ambiente relajado.'},
+    {id:'c3',titulo:'Escuela Pokémon',para:'De 12 a 16 años',dia:0,hora:'18:00',fin:'20:00',precio:0,cupo:0,desc:'Enseñanza de Pokémon TCG para adolescentes: estrategia, armado de mazo y preparación para competir.'}
   ];
+  // Títulos, fechas y autores reales del blog actual; el texto completo lo copia el local desde el panel
   const posts = [
-    {id:'b1',titulo:'Así salió el torneo de Pokémon del sábado',cat:'Torneos',fecha:new Date(ahora-2*86400000).toISOString(),juego:'pokemon',resumen:'Una jornada a pleno con mesas llenas: repasamos cómo se jugó, los mazos que más se vieron y lo que viene.',cuerpo:'El sábado tuvimos una de las jornadas más concurridas del año. Se jugaron cinco rondas de suizo y un top 4 muy parejo.\n\nLo que más nos gustó fue ver muchos jugadores nuevos que arrancaron en las clases del local y ya se animan a competir.\n\nEl próximo torneo es este sábado a las 16 h. ¡Te esperamos en el Ático! (Texto de ejemplo para la demo.)'},
-    {id:'b2',titulo:'Cómo leer una tier list si recién arrancás',cat:'Guías',fecha:new Date(ahora-6*86400000).toISOString(),juego:'yugioh',resumen:'Las tier lists ayudan a entender qué mazos funcionan mejor, pero no lo son todo. Te contamos cómo usarlas a tu favor.',cuerpo:'Una tier list ordena los mazos según qué tan bien les va en torneos. Sirve como guía, pero no reemplaza a la práctica.\n\nNuestro consejo: elegí un mazo que te divierta, aprendé bien cómo se juega y probalo en los torneos semanales.\n\nSi tenés dudas, acercate al local: siempre hay alguien con ganas de ayudarte. (Texto de ejemplo para la demo.)'},
-    {id:'b3',titulo:'Llegó Riftbound al Ático',cat:'Novedades',fecha:new Date(ahora-10*86400000).toISOString(),juego:'riftbound',resumen:'Ya tenemos Champion Decks y sobres del nuevo juego de cartas. Vení a probarlo en las mesas del local.',cuerpo:'Sumamos un juego nuevo a la tienda. Tenemos mazos para arrancar y sobres para mejorar tu mazo.\n\nEstamos organizando jornadas de prueba para que lo conozcas sin comprar nada. Seguinos en Instagram para enterarte de las fechas. (Texto de ejemplo para la demo.)'}
+    {id:'b1',titulo:'LAIC 2026: Road to Day 2',cat:'Torneos',fecha:'2026-02-19T15:00:00.000Z',autor:'ZodiStef',juego:'pokemon',resumen:'La experiencia rumbo al Day 2 del Campeonato Internacional de Latinoamérica.',cuerpo:'(Acá va el texto completo de la publicación, que el local copia desde su blog actual con “Editar” en el Panel → Comunidad.)'},
+    {id:'b2',titulo:'Hablemos en serio: esta es la verdadera Tier List de la Tanocup',cat:'Tier list',fecha:'2026-02-05T15:00:00.000Z',autor:'Arceus',juego:'pokemon',resumen:'Los mazos que mejor rinden en la liga Tanocup del Ático, ordenados sin vueltas.',cuerpo:'(Acá va el texto completo de la publicación, que el local copia desde su blog actual con “Editar” en el Panel → Comunidad.)'},
+    {id:'b3',titulo:'Volvimos a ordenarlos: si te molesta, es porque sabés dónde estás',cat:'Tier list',fecha:'2025-11-22T15:00:00.000Z',autor:'Seismitoad',juego:'pokemon',resumen:'Una nueva versión del ranking de mazos del Ático.',cuerpo:'(Acá va el texto completo de la publicación, que el local copia desde su blog actual con “Editar” en el Panel → Comunidad.)'}
   ];
   const config = {
-    nombre:'El Ático de Hisui', ciudad:'San Martín de los Andes, Neuquén',
-    direccion:'Dirección a confirmar', email:'email a confirmar', instagram:'Instagram a confirmar',
+    nombre:'El Ático de Hisui SMA', ciudad:'San Martín de los Andes, Neuquén',
+    direccion:'Dirección a confirmar', email:'email a confirmar', instagram:'@el.atico.de.hisui.sma',
+    instagramUrl:'https://www.instagram.com/el.atico.de.hisui.sma/',
+    resenaUrl:'https://www.google.com/search?q=el+atico+de+hisui+sma',
+    // Grupos de WhatsApp por juego: link vacío = “link a cargar”
+    grupos:[
+      {juego:'pokemon',url:''},{juego:'yugioh',url:''},{juego:'onepiece',url:''},{juego:'digimon',url:''},
+      {juego:'myl',url:''},{juego:'lairen',url:''},{juego:'swu',url:''},{juego:'magic',url:''},{juego:'riftbound',url:''}
+    ],
+    banner:{activo:true, etiqueta:'Nueva expansión', titulo:'Llegó la nueva expansión de Pokémon TCG', texto:'Sobres, Elite Trainer Box y más. Reservá la tuya online y retirala en el local.', boton:'Explorá la expansión', url:'#productos-pokemon', img:''},
     horarios:{0:{a:'16:00',c:'21:00'},1:null,2:{a:'14:00',c:'21:00'},3:{a:'14:00',c:'21:00'},4:{a:'14:00',c:'21:00'},5:{a:'14:00',c:'21:00'},6:{a:'14:00',c:'21:00'}},
     descTransfer:10, envioGratisDesde:0, costoSMA:3500,
     zonas:[
@@ -579,7 +622,7 @@ function seed(){
       {n:'Centro y Cuyo',costo:11000,prov:['Buenos Aires','CABA','Córdoba','Santa Fe','Entre Ríos','Mendoza','San Luis','San Juan']},
       {n:'Norte (NOA y NEA)',costo:12500,prov:['La Rioja','Catamarca','Tucumán','Santiago del Estero','Salta','Jujuy','Chaco','Formosa','Corrientes','Misiones']}
     ],
-    alias:'ATICO.HISUI.DEMO', cbu:'0000003100099999999999', titular:'El Ático de Hisui (datos de ejemplo)'
+    alias:'ATICO.HISUI.DEMO', cbu:'0000003100099999999999', titular:'El Ático de Hisui SMA (datos de ejemplo)'
   };
   const pedidos = [
     pedidoEj(1001, ahora-26*3600000, 'Lucía Fernández', [['p2',1],['p36',2]], 'retiro', 'mp', 'Listo para retirar', productos, config),
@@ -743,8 +786,8 @@ function render(){
 }
 function tituloVista(){
   const t = {inicio:'Tienda TCG en San Martín de los Andes', productos:'Productos', singles:'Singles', torneos:'Torneos de la semana', clases:'Clases de TCG', comunidad:'Comunidad', nosotros:'Nosotros y contacto', checkout:'Finalizar compra', gracias:'¡Gracias por tu compra!'}[st.vista];
-  if(st.vista === 'producto'){ const p = buscarItem(st.param); return (p ? p.nombre : 'Producto') + ' — El Ático de Hisui'; }
-  return 'El Ático de Hisui — ' + (t || 'Tienda');
+  if(st.vista === 'producto'){ const p = buscarItem(st.param); return (p ? p.nombre : 'Producto') + ' — El Ático de Hisui SMA'; }
+  return 'El Ático de Hisui SMA — ' + (t || 'Tienda');
 }
 function vista(){
   switch(st.vista){
@@ -773,7 +816,7 @@ function header(){
   return `<div class="anuncio">${db.config.descTransfer}% OFF pagando con transferencia · Envíos a todo el país · Retiro gratis en el local</div>
   <header class="hdr"><div class="wrap hdr-in">
     <button class="ico-btn solo-movil" data-a="menu" aria-label="Abrir menú">${I.menu}</button>
-    <a class="logo" href="#inicio" aria-label="El Ático de Hisui, ir al inicio">${logoSvg()}<span><b>El Ático</b><small>de Hisui</small></span></a>
+    <a class="logo" href="#inicio" aria-label="El Ático de Hisui SMA, ir al inicio">${logoSvg()}<span><b>El Ático</b><small>de Hisui <span class="sma">SMA</span></small></span></a>
     <form class="buscador" data-form="buscar" role="search"><input name="q" type="search" placeholder="Buscar cartas, sobres, mazos…" aria-label="Buscar productos" value="${esc(st.f.q)}"><button aria-label="Buscar">${I.bus}</button></form>
     <span class="estado ${e.abierto?'on':'off'}" title="${e.texto}">${e.texto.replace(/ · (.*)$/, '<span class="est-det"> · $1</span>')}</span>
     <button class="carrito-btn" data-a="carrito" aria-label="Abrir carrito">${I.cart}<span class="solo-desk">Carrito</span><span class="badge">${n}</span></button>
@@ -787,7 +830,7 @@ function header(){
 function menuMovil(){
   return `<div class="capa ${st.menu?'on':''}" data-a="cerrarTodo"></div>
   <aside class="lateral izq ${st.menu?'on':''}" aria-label="Menú" ${st.menu?'':'inert'}>
-    <div class="lat-hdr"><a class="logo" href="#inicio">${logoSvg(34)}<span><b>El Ático</b><small>de Hisui</small></span></a><button class="ico-btn" data-a="cerrarTodo" aria-label="Cerrar">${I.x}</button></div>
+    <div class="lat-hdr"><a class="logo" href="#inicio">${logoSvg(34)}<span><b>El Ático</b><small>de Hisui <span class="sma">SMA</span></small></span></a><button class="ico-btn" data-a="cerrarTodo" aria-label="Cerrar">${I.x}</button></div>
     <div class="lat-body menu-mov">${NAV.map(([v,t]) => `<a href="#${v}">${t}</a>`).join('')}
       <div class="sub">Categorías</div>${CATS.map(c => `<a href="#productos-${c.k}"><span class="dot" style="background:${c.c}"></span>${c.n}</a>`).join('')}</div>
   </aside>`;
@@ -803,11 +846,13 @@ function bottomNav(){
 }
 function footer(){
   const c = db.config;
-  const wa = `https://wa.me/${CONFIG.DEV_WHATSAPP}?text=${encodeURIComponent('Hola Fausto, vi el sistema de El Ático de Hisui y quiero consultar')}`;
+  const wa = `https://wa.me/${CONFIG.DEV_WHATSAPP}?text=${encodeURIComponent('Hola Fausto, vi el sistema de El Ático de Hisui SMA y quiero consultar')}`;
   return `<footer class="ftr"><div class="wrap ftr-grid">
-    <div><a class="logo" href="#inicio">${logoSvg(36)}<span><b>El Ático</b><small>de Hisui</small></span></a>
+    <div><a class="logo" href="#inicio">${logoSvg(36)}<span><b>El Ático</b><small>de Hisui <span class="sma">SMA</span></small></span></a>
       <p style="font-size:.9rem;margin-top:14px">Tienda de juegos de cartas, juegos de mesa y coleccionables en ${esc(c.ciudad)}. Torneos todas las semanas.</p>
-      <p style="font-size:.85rem;margin:0">${I.pin} ${esc(c.direccion)}<br>${esc(c.email)} · ${esc(c.instagram)}</p></div>
+      <p style="font-size:.85rem;margin:0">${I.pin} ${esc(c.direccion)}<br>${esc(c.email)}</p>
+      <a href="${esc(c.instagramUrl)}" target="_blank" rel="noopener" style="display:inline-flex;gap:8px;align-items:center;margin-top:8px">${I.ig} ${esc(c.instagram)}</a>
+      <a href="${esc(c.resenaUrl)}" target="_blank" rel="noopener">★ Dejanos tu reseña en Google</a></div>
     <div><h4>Tienda</h4>${NAV.map(([v,t]) => `<a href="#${v}">${t}</a>`).join('')}</div>
     <div><h4>Ayuda</h4><button class="lk" data-a="info" data-i="comprar">Cómo comprar</button><button class="lk" data-a="info" data-i="envios">Envíos y retiros</button><button class="lk" data-a="info" data-i="faq">Preguntas frecuentes</button><button class="lk" data-a="info" data-i="privacidad">Política de privacidad</button><button class="lk" data-a="info" data-i="terminos">Términos y condiciones</button></div>
     <div><h4>Medios de pago</h4><div class="pagos"><span>Mercado Pago</span><span>Visa</span><span>Mastercard</span><span>American Express</span><span>Naranja</span><span>Débito</span><span>Transferencia</span><span>Efectivo en el local</span></div>
@@ -815,7 +860,7 @@ function footer(){
   </div>
   <div class="legal wrap"><button class="btn-arrep" data-a="arrepentimiento">Botón de arrepentimiento</button>
     <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank" rel="noopener">Defensa de las y los Consumidores. Para reclamos ingresá acá.</a>
-    <span>© ${new Date().getFullYear()} El Ático de Hisui</span></div>
+    <span>© ${new Date().getFullYear()} El Ático de Hisui SMA</span></div>
   <div class="dev"><span>Propiedad de Cordobes Fausto</span><a class="wa" href="${wa}" target="_blank" rel="noopener">${I.wa} Contactar</a><a href="${CONFIG.DEV_WEB}" target="_blank" rel="noopener">¿Le gustó la página y quiere una para su local? Click aquí</a></div>
   </footer>`;
 }
@@ -868,13 +913,15 @@ function card(p){
 function vInicio(){
   const dest = db.productos.filter(p => p.destacado).slice(0,8);
   const {dia} = ahoraAR();
-  const prox = [...db.eventos].sort((a,b) => ((a.dia-dia+7)%7)*1440 + aMin(a.hora) - (((b.dia-dia+7)%7)*1440 + aMin(b.hora))).slice(0,4);
   const H = db.config.horarios;
-  return `<section class="hero"><div class="wrap">
+  return `<section class="sec cal-top"><div class="wrap">
+    <div class="sec-hdr"><div><h1 style="font-size:clamp(1.5rem,3.5vw,2rem);margin:0">Calendario de actividades semanales</h1><p>Organizá tu semana con nuestros torneos, ligas y escuelas Pokémon</p></div><a class="link" href="#torneos">Ver página de torneos</a></div>
+    ${calendarioSemanal()}</div></section>
+  <section class="hero"><div class="wrap">
     <div><span class="b b-off" style="display:inline-block;margin-bottom:14px">Tienda TCG · San Martín de los Andes</span>
-      <h1>Tus cartas, tus torneos, <em>tu lugar.</em></h1>
+      <h2 style="font-size:clamp(1.8rem,4.5vw,2.8rem);color:#fff;letter-spacing:-.02em">Tus cartas, tus torneos, <em style="font-style:normal;color:#FEB2B2">tu lugar.</em></h2>
       <p>Sobres, mazos, singles y accesorios de Pokémon, Yu-Gi-Oh!, Magic, One Piece, Digimon y más. Comprá online y retirá en el local o recibilo en tu casa.</p>
-      <div class="ctas"><a class="btn btn-rojo" href="#productos">Ver productos</a><a class="btn btn-out" href="#torneos">Torneos de la semana</a></div></div>
+      <div class="ctas"><a class="btn btn-rojo" href="#productos">Ver productos</a><a class="btn btn-out" href="#nosotros">Cómo llegar</a></div></div>
     <div class="hero-art" aria-hidden="true">
       <img class="hc" src="${ph('pokemon','Single')}" style="left:20px;top:40px;transform:rotate(-14deg)" alt="">
       <img class="hc" src="${ph('onepiece','Single')}" style="left:120px;top:20px;transform:rotate(-2deg);z-index:2" alt="">
@@ -886,20 +933,54 @@ function vInicio(){
     <div class="benef"><span class="ic">${I.banco}</span><div><b>${db.config.descTransfer}% OFF con transferencia</b><small>Se aplica al finalizar la compra</small></div></div>
     <div class="benef"><span class="ic">${I.tarjeta}</span><div><b>Mercado Pago</b><small>Tarjetas, débito y cuotas</small></div></div>
   </div></div>
+  ${bannerNovedad()}
   <section class="sec" style="padding-top:20px"><div class="wrap"><div class="sec-hdr"><div><h2>Elegí tu juego</h2><p>Todo lo que tenemos, ordenado por juego</p></div><a class="link" href="#productos">Ver todo</a></div>
     <div class="juegos">${CATS.map(c => `<a class="juego" href="#productos-${c.k}" style="background:linear-gradient(140deg,${c.c},#1A202C)"><b>${c.n}</b><small>${db.productos.filter(p => p.cat === c.k).length} productos</small></a>`).join('')}</div></div></section>
   <section class="sec sec-alt"><div class="wrap"><div class="sec-hdr"><div><h2>Destacados</h2><p>Lo más buscado del Ático</p></div><a class="link" href="#productos">Ver todos los productos</a></div>
     <div class="grilla">${dest.map(card).join('')}</div></div></section>
-  <section class="sec"><div class="wrap"><div class="sec-hdr"><div><h2>Esta semana en el Ático</h2><p>Torneos y juntadas en el local</p></div><a class="link" href="#torneos">Ver calendario completo</a></div>
-    <div class="g2">${prox.map(evCard).join('')}</div></div></section>
+  ${bienvenida()}
   <section class="sec" style="padding-top:0"><div class="wrap"><div class="banda"><div><h2>Clases de Pokémon TCG</h2><p>Para chicos, adolescentes y adultos. Aprendé a jugar desde cero con mazos del local.</p></div><a class="btn" href="#clases">Ver horarios</a></div></div></section>
   <section class="sec sec-alt"><div class="wrap"><div class="sec-hdr"><div><h2>El Ático Comunidad</h2><p>Resultados, guías y novedades</p></div><a class="link" href="#comunidad">Ver todo</a></div>
-    <div class="g3">${db.posts.slice(0,3).map(postCard).join('')}</div></div></section>
-  <section class="sec"><div class="wrap g2" style="align-items:center">
+    <div class="g3">${[...db.posts].sort((a,b) => b.fecha.localeCompare(a.fecha)).slice(0,3).map(postCard).join('')}</div></div></section>
+  <section class="sec">${comunidadBloque()}</section>
+  <section class="sec sec-alt"><div class="wrap g2" style="align-items:center">
     <div><h2>Visitanos</h2><p style="color:var(--gris)">${esc(db.config.direccion)} · ${esc(db.config.ciudad)}</p>
       <table class="tabla-h">${[2,3,4,5,6,0,1].map(d => `<tr class="${d===dia?'hoy':''}"><td>${DIAS[d]}</td><td style="text-align:right">${H[d] ? H[d].a+' a '+H[d].c+' h' : 'Cerrado'}</td></tr>`).join('')}</table>
       <a class="btn" style="margin-top:16px" href="#nosotros">Cómo llegar y contacto</a></div>
     ${mapaFicticio()}</div></section>`;
+}
+/* Actividades = torneos + clases (así aparecen juntas en el calendario semanal) */
+function actividades(){
+  return [...db.eventos.map(e => ({...e, clase:false})),
+          ...db.clases.map(c => ({id:c.id, dia:c.dia, hora:c.hora, fin:c.fin, juego:'pokemon', nombre:c.titulo, formato:'Enseñanza · ' + c.para, costo:c.precio, cupo:c.cupo, premio:'', clase:true}))];
+}
+const rangoHora = e => e.hora + (e.fin ? '–' + e.fin : '') + ' h';
+function bannerNovedad(){
+  const b = db.config.banner; if(!b || !b.activo) return '';
+  const ext = b.url && !b.url.startsWith('#');
+  return `<section class="wrap" style="padding-top:8px"><div class="promo">
+    <div class="promo-txt">${b.etiqueta?`<span class="b b-pre" style="display:inline-block;margin-bottom:10px">${esc(b.etiqueta)}</span>`:''}<h2>${esc(b.titulo)}</h2><p>${esc(b.texto)}</p>
+      ${b.boton?`<a class="btn btn-rojo" href="${esc(b.url||'#productos')}" ${ext?'target="_blank" rel="noopener"':''}>${esc(b.boton)}</a>`:''}</div>
+    <div class="promo-img"><img src="${b.img || ph('pokemon','Sellado')}" alt="${esc(b.titulo)}"></div></div></section>`;
+}
+function bienvenida(){
+  return `<section class="sec"><div class="wrap"><div class="bienv">
+    <div><span class="card-cat">Bienvenidos</span><h2 style="margin-top:6px">Bienvenidos a El Ático de Hisui SMA</h2>
+      <p>Somos una comunidad para coleccionistas y jugadores de cartas. Encontrá Pokémon, Magic, Yu-Gi-Oh! y muchos juegos más, además de figuras, accesorios y coleccionables vintage.</p>
+      <p>Organizamos torneos semanales y mensuales para todos los niveles: si recién arrancás o si venís a competir, hay lugar para vos.</p></div>
+    <div class="bienv-box"><b>🏷️ Los mejores precios, en el local</b><p>Acercate a la tienda: siempre hay promociones y artículos con descuento que no están online.</p><a class="btn btn-osc" href="#nosotros">Cómo llegar</a></div>
+  </div></div></section>`;
+}
+function comunidadBloque(){
+  const c = db.config;
+  return `<div class="wrap"><div class="sec-hdr"><div><h2>Sumate a nuestra comunidad</h2><p>Entrá al grupo de tu juego para enterarte de torneos, intercambios y novedades</p></div></div>
+    <div class="grupos">${c.grupos.map(g => { const k = catBy(g.juego);
+      return g.url ? `<a class="grupo" href="${esc(g.url)}" target="_blank" rel="noopener" style="--c:${k.c}"><span class="g-ic">${I.wa}</span><span><b>${esc(k.n)}</b><small>Grupo de WhatsApp</small></span></a>`
+                   : `<button class="grupo" data-a="grupoSinLink" style="--c:${k.c}"><span class="g-ic">${I.wa}</span><span><b>${esc(k.n)}</b><small>Grupo de WhatsApp</small></span></button>`; }).join('')}</div>
+    <div class="g2" style="margin-top:16px">
+      <a class="red-card ig" href="${esc(c.instagramUrl)}" target="_blank" rel="noopener"><span class="r-ic">${I.ig}</span><span><b>Seguinos en Instagram</b><small>${esc(c.instagram)}</small></span><span class="r-go">Seguir →</span></a>
+      <a class="red-card gg" href="${esc(c.resenaUrl)}" target="_blank" rel="noopener"><span class="r-ic estrellas">★★★★★</span><span><b>¿Te gustó el Ático?</b><small>Dejanos tu reseña en Google</small></span><span class="r-go">Opinar →</span></a>
+    </div></div>`;
 }
 function proximaFecha(diaSemana){
   const {dia} = ahoraAR(); const delta = (diaSemana - dia + 7) % 7;
@@ -909,16 +990,16 @@ function proximaFecha(diaSemana){
 function evCard(e){
   const c = catBy(e.juego), d = proximaFecha(e.dia);
   return `<div class="ev-card" style="--c:${c.c}"><div class="ev-fecha"><small>${DIAS_C[e.dia]}</small><b>${d.toLocaleDateString('es-AR',{timeZone:TZ,day:'2-digit'})}</b></div>
-    <div style="flex:1;min-width:0"><b style="color:var(--tinta)">${esc(e.nombre)}</b><div style="font-size:.85rem;color:var(--gris)">${e.hora} h · ${esc(e.formato)} · ${e.costo ? 'Inscripción '+$$(e.costo) : 'Gratis'}</div></div>
+    <div style="flex:1;min-width:0"><b style="color:var(--tinta)">${esc(e.nombre)}</b><div style="font-size:.85rem;color:var(--gris)">${rangoHora(e)} · ${esc(e.formato)}${e.costo ? ' · '+$$(e.costo) : ''}</div></div>${e.clase?'<span class="est est-listo">Clase</span>':''}
     <span class="dot" style="background:${c.c}"></span></div>`;
 }
 function postCard(b){
   return `<article class="caja"><a class="post-img" href="#post-${b.id}" style="display:block"><img src="${b.img || ph(b.juego,'Sellado')}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"></a>
-    <div class="post-meta">${esc(b.cat)} · ${fmtDia(b.fecha)}</div><h3 style="margin:6px 0"><a href="#post-${b.id}" style="text-decoration:none">${esc(b.titulo)}</a></h3>
+    <div class="post-meta">${esc(b.cat)} · ${fmtDia(b.fecha)}${b.autor?' · por '+esc(b.autor):''}</div><h3 style="margin:6px 0"><a href="#post-${b.id}" style="text-decoration:none">${esc(b.titulo)}</a></h3>
     <p style="color:var(--gris);font-size:.9rem;margin:0 0 10px">${esc(b.resumen)}</p><a class="link" href="#post-${b.id}">Leer más</a></article>`;
 }
 function mapaFicticio(){
-  const q = encodeURIComponent('El Ático de Hisui, San Martín de los Andes, Neuquén');
+  const q = encodeURIComponent('El Ático de Hisui SMA, San Martín de los Andes, Neuquén');
   return `<div><div class="mapa"><svg viewBox="0 0 400 250" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="250" fill="#E9EEF2"/><path d="M0 170 Q120 140 200 160 T400 130 V250 H0z" fill="#BFD7EA"/><g stroke="#fff" stroke-width="10"><path d="M0 60H400M0 115H400M70 0V250M170 0V250M270 0V250M350 0V250"/></g><g stroke="#fff" stroke-width="4"><path d="M0 88H400M120 0V250M220 0V250M310 0V250"/></g><circle cx="220" cy="88" r="18" fill="#E53E3E" opacity=".25"/><path d="M220 60c-9 0-16 7-16 16 0 12 16 28 16 28s16-16 16-28c0-9-7-16-16-16z" fill="#C53030"/><circle cx="220" cy="76" r="5" fill="#fff"/><text x="200" y="232" font-family="Inter,Arial" font-size="12" fill="#2D3748" text-anchor="middle">Lago Lácar</text></svg></div>
     <a class="btn btn-osc btn-block" style="margin-top:10px" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">${I.pin} Abrir en Google Maps</a></div>`;
 }
@@ -1043,29 +1124,35 @@ function cardSingle(x){
 }
 
 /* ---------- Torneos ---------- */
-function vTorneos(){
-  const {dia} = ahoraAR(), H = db.config.horarios, f = st.tf;
+// Grilla del calendario semanal (se usa arriba de todo en el Inicio y en la página Torneos)
+function calendarioSemanal(){
+  const {dia} = ahoraAR(), H = db.config.horarios, f = st.tf, todas = actividades();
   const juegos = [...new Set(db.eventos.map(e => e.juego))];
-  // Los próximos 7 días empezando por hoy (se saltean los días cerrados sin eventos)
-  const orden = [0,1,2,3,4,5,6].map(i => (dia + i) % 7).filter(d => H[d] || db.eventos.some(e => e.dia === d));
-  return `<div class="wrap"><nav class="migas"><a href="#inicio">Inicio</a> / Torneos</nav>
-    <div class="toolbar"><div><h1>Torneos de la semana</h1><p style="color:var(--gris);margin:4px 0 0">Inscripción en el local hasta 15 minutos antes de empezar. Lunes cerrado.</p></div></div>
-    <div class="chips" style="margin-bottom:16px"><button class="chip ${!f?'on':''}" data-a="tfiltro" data-k="">Todos los juegos</button>${juegos.map(k => { const c = catBy(k); return `<button class="chip ${f===k?'on':''}" data-a="tfiltro" data-k="${k}"><span class="dot" style="background:${c.c}"></span>${c.n}</button>`; }).join('')}</div>
+  const pasa = e => !f || (f === 'clases' ? e.clase : (!e.clase && e.juego === f));
+  // Los próximos 7 días empezando por hoy (se saltean los días cerrados sin actividades)
+  const orden = [0,1,2,3,4,5,6].map(i => (dia + i) % 7).filter(d => H[d] || todas.some(e => e.dia === d));
+  return `<div class="chips" style="margin-bottom:16px"><button class="chip ${!f?'on':''}" data-a="tfiltro" data-k="">Todo</button>${juegos.map(k => { const c = catBy(k); return `<button class="chip ${f===k?'on':''}" data-a="tfiltro" data-k="${k}"><span class="dot" style="background:${c.c}"></span>${c.n}</button>`; }).join('')}<button class="chip ${f==='clases'?'on':''}" data-a="tfiltro" data-k="clases">🎓 Escuelas Pokémon</button></div>
     <div class="semana">${orden.map(d => {
-      const evs = db.eventos.filter(e => e.dia === d && (!f || e.juego === f)).sort((a,b) => aMin(a.hora) - aMin(b.hora));
+      const evs = todas.filter(e => e.dia === d && pasa(e)).sort((a,b) => aMin(a.hora) - aMin(b.hora));
       const fecha = proximaFecha(d).toLocaleDateString('es-AR',{timeZone:TZ,day:'2-digit',month:'2-digit'});
       return `<div class="dia ${d===dia?'hoy':''}"><h3>${DIAS[d]} <small style="color:var(--gris);font-weight:500;font-family:var(--f-txt);font-size:.78rem">${fecha}</small>${d===dia?'<span class="hoy-tag">HOY</span>':''}</h3>
-        <small style="color:var(--gris)">${H[d]?'Abre '+H[d].a+' a '+H[d].c:'Cerrado'}</small>
-        ${evs.length ? evs.map(e => { const c = catBy(e.juego); return `<div class="ev" style="--c:${c.c}"><span class="h">${e.hora}</span><b>${esc(e.nombre)}</b><small>${esc(c.n)} · ${esc(e.formato)}</small><small>${e.costo?'Inscripción '+$$(e.costo):'Entrada libre'} · Cupo ${e.cupo}</small><small>Premios: ${esc(e.premio)}</small><a href="${linkCalendario(e)}" target="_blank" rel="noopener">+ Agregar a mi calendario</a></div>`; }).join('') : '<p style="color:var(--gris);font-size:.85rem;margin-top:10px">Sin eventos programados</p>'}
+        <small style="color:var(--gris)">${H[d]?'Local: '+H[d].a+' a '+H[d].c+' h':'Local cerrado'}</small>
+        ${evs.length ? evs.map(e => { const c = catBy(e.juego); return `<div class="ev" style="--c:${c.c}"><span class="h">${e.hora}</span>${e.clase?' <span class="est est-listo" style="font-size:.65rem">Clase</span>':''}<b>${esc(e.nombre)}</b><small>${esc(e.formato)}</small><small>🕒 ${rangoHora(e)}</small>${e.costo?`<small>${e.clase?'Valor':'Inscripción'} ${$$(e.costo)}</small>`:''}${e.cupo?`<small>Cupo ${e.cupo}</small>`:''}${e.premio?`<small>Premios: ${esc(e.premio)}</small>`:''}<a href="${linkCalendario(e)}" target="_blank" rel="noopener">+ Agregar a mi calendario</a></div>`; }).join('') : '<p style="color:var(--gris);font-size:.85rem;margin-top:10px">Sin actividades</p>'}
       </div>`; }).join('')}</div>
-    <div class="aviso" style="margin:20px 0 40px">Los torneos pueden cambiar por feriados o eventos especiales. Seguinos en Instagram para enterarte de todo.</div></div>`;
+    <div class="aviso" style="margin-top:16px">Todos los torneos son oficiales salvo que se indique lo contrario. Las actividades pueden cambiar por feriados o eventos especiales. Para más información, consultanos o seguinos en <a href="${esc(db.config.instagramUrl)}" target="_blank" rel="noopener">Instagram</a>.</div>`;
+}
+function vTorneos(){
+  return `<div class="wrap"><nav class="migas"><a href="#inicio">Inicio</a> / Torneos</nav>
+    <div class="toolbar"><div><h1>Calendario de actividades semanales</h1><p style="color:var(--gris);margin:4px 0 0">Organizá tu semana con nuestros torneos, ligas y escuelas Pokémon.</p></div></div>
+    ${calendarioSemanal()}<div style="height:20px"></div>
+    </div><section class="sec" style="padding-top:10px">${comunidadBloque()}</section>`;
 }
 function linkCalendario(e){
   const d = proximaFecha(e.dia);
   const ymd = d.toLocaleDateString('en-CA',{timeZone:TZ}).replace(/-/g,'');
-  const [h,m] = e.hora.split(':').map(Number), fin = h*60 + m + 180;
+  const [h,m] = e.hora.split(':').map(Number), fin = e.fin ? aMin(e.fin) : h*60 + m + 180;
   const t = (x) => String(Math.floor(x/60)%24).padStart(2,'0') + String(x%60).padStart(2,'0') + '00';
-  const p = new URLSearchParams({action:'TEMPLATE', text:e.nombre + ' — El Ático de Hisui', dates:`${ymd}T${t(h*60+m)}/${ymd}T${t(fin)}`, ctz:TZ, details:`${catBy(e.juego).n} · ${e.formato}`, location:db.config.direccion + ', San Martín de los Andes'});
+  const p = new URLSearchParams({action:'TEMPLATE', text:e.nombre + ' — El Ático de Hisui SMA', dates:`${ymd}T${t(h*60+m)}/${ymd}T${t(fin)}`, ctz:TZ, details:`${catBy(e.juego).n} · ${e.formato}`, location:db.config.direccion + ', San Martín de los Andes'});
   return 'https://calendar.google.com/calendar/render?' + p.toString();
 }
 
@@ -1076,7 +1163,7 @@ function vClases(){
     <div class="g3" style="margin:20px 0 40px">${db.clases.map(c => `<article class="caja" style="display:flex;flex-direction:column">
       <span class="b b-off" style="align-self:flex-start">${esc(c.para)}</span><h3 style="margin:12px 0 6px">${esc(c.titulo)}</h3>
       <p style="color:var(--gris);font-size:.92rem;flex:1">${esc(c.desc)}</p>
-      <ul class="mini-l"><li><span>Día y hora</span><b>${DIAS[c.dia]} ${c.hora} h</b></li><li><span>Valor por clase</span><b>${$$(c.precio)}</b></li><li><span>Cupo</span><b>${c.cupo} personas</b></li></ul>
+      <ul class="mini-l"><li><span>Día</span><b>${DIAS[c.dia]}</b></li><li><span>Horario</span><b>${rangoHora(c)}</b></li><li><span>Valor por clase</span><b>${c.precio?$$(c.precio):'Consultá en el local'}</b></li>${c.cupo?`<li><span>Cupo</span><b>${c.cupo} personas</b></li>`:''}</ul>
       <button class="btn btn-rojo btn-block" style="margin-top:14px" data-a="consultaClase" data-id="${c.id}">Quiero más info</button></article>`).join('')}</div></div>`;
 }
 
@@ -1084,15 +1171,16 @@ function vClases(){
 function vComunidad(){
   const cats = [...new Set(db.posts.map(p => p.cat))], f = st.blogCat;
   const r = db.posts.filter(p => !f || p.cat === f).sort((a,b) => b.fecha.localeCompare(a.fecha));
-  return `<div class="wrap"><nav class="migas"><a href="#inicio">Inicio</a> / Comunidad</nav><h1>El Ático Comunidad</h1>
+  return `<div class="wrap"><nav class="migas"><a href="#inicio">Inicio</a> / Comunidad</nav><h1>El Ático Comunidad</h1><p style="color:var(--gris);margin-top:-4px">Resultados, tier lists y novedades escritas por los jugadores del Ático.</p>
     <div class="chips" style="margin:6px 0 18px"><button class="chip ${!f?'on':''}" data-a="bcat" data-k="">Todo</button>${cats.map(c => `<button class="chip ${f===c?'on':''}" data-a="bcat" data-k="${esc(c)}">${esc(c)}</button>`).join('')}</div>
-    ${r.length?`<div class="g3" style="margin-bottom:40px">${r.map(postCard).join('')}</div>`:'<div class="vacio">Todavía no hay publicaciones.</div>'}</div>`;
+    ${r.length?`<div class="g3" style="margin-bottom:20px">${r.map(postCard).join('')}</div>`:'<div class="vacio">Todavía no hay publicaciones.</div>'}</div>
+    <section class="sec sec-alt" style="margin-top:20px">${comunidadBloque()}</section>`;
 }
 function vPost(){
   const b = db.posts.find(x => x.id === st.param);
   if(!b) return `<div class="wrap sec"><div class="vacio"><h3>Publicación no encontrada</h3><a class="btn btn-rojo" href="#comunidad">Volver a Comunidad</a></div></div>`;
   return `<div class="wrap"><nav class="migas"><a href="#inicio">Inicio</a> / <a href="#comunidad">Comunidad</a></nav><article class="articulo">
-    <div class="post-meta">${esc(b.cat)} · ${fmtDia(b.fecha)}</div><h1>${esc(b.titulo)}</h1>
+    <div class="post-meta">${esc(b.cat)} · ${fmtDia(b.fecha)}${b.autor?' · por '+esc(b.autor):''}</div><h1>${esc(b.titulo)}</h1>
     <div class="post-img" style="margin:16px 0"><img src="${b.img || ph(b.juego,'Sellado')}" alt="" style="width:100%;height:100%;object-fit:cover"></div>
     ${b.cuerpo.split(/\n+/).map(t => `<p>${esc(t)}</p>`).join('')}
     <a class="btn" href="#comunidad">← Volver a Comunidad</a></article></div>`;
@@ -1103,11 +1191,13 @@ function vNosotros(){
   const c = db.config, {dia} = ahoraAR(), e = estadoLocal();
   return `<div class="wrap"><nav class="migas"><a href="#inicio">Inicio</a> / Nosotros</nav><h1>Sobre el Ático</h1>
     <div class="g2" style="margin-bottom:40px;align-items:start">
-      <div><p style="font-size:1.04rem">El Ático de Hisui es el punto de encuentro de los jugadores de cartas de San Martín de los Andes. Vendemos productos originales, organizamos torneos todas las semanas y enseñamos a jugar a quien quiera arrancar.</p>
-        <p style="color:var(--gris)">(Texto de ejemplo: el cliente puede contar acá su historia.)</p>
+      <div><p style="font-size:1.04rem">El Ático de Hisui SMA es una comunidad para coleccionistas y jugadores de cartas en San Martín de los Andes. Tenemos Pokémon, Magic, Yu-Gi-Oh! y muchos juegos más, además de figuras, accesorios y coleccionables vintage.</p>
+        <p>Organizamos torneos semanales y mensuales para todos los niveles, y clases para aprender a jugar desde cero.</p>
+        <p class="aviso"><b>Los mejores precios, en el local:</b> siempre hay promociones y artículos con descuento en la tienda.</p>
         <div class="caja" style="margin-top:18px"><h3>Horarios <span class="estado ${e.abierto?'on':'off'}" style="margin-left:6px">${e.texto}</span></h3>
           <table class="tabla-h">${[2,3,4,5,6,0,1].map(d => `<tr class="${d===dia?'hoy':''}"><td>${DIAS[d]}</td><td style="text-align:right">${c.horarios[d] ? c.horarios[d].a+' a '+c.horarios[d].c+' h' : 'Cerrado'}</td></tr>`).join('')}</table></div>
-        <div class="caja" style="margin-top:14px"><h3>Contacto</h3><ul class="mini-l"><li><span>Dirección</span><b>${esc(c.direccion)}</b></li><li><span>Ciudad</span><b>${esc(c.ciudad)}</b></li><li><span>Email</span><b>${esc(c.email)}</b></li><li><span>Instagram</span><b>${esc(c.instagram)}</b></li></ul></div></div>
+        <div class="caja" style="margin-top:14px"><h3>Contacto</h3><ul class="mini-l"><li><span>Dirección</span><b>${esc(c.direccion)}</b></li><li><span>Ciudad</span><b>${esc(c.ciudad)}</b></li><li><span>Email</span><b>${esc(c.email)}</b></li><li><span>Instagram</span><a href="${esc(c.instagramUrl)}" target="_blank" rel="noopener"><b>${esc(c.instagram)}</b></a></li></ul>
+          <a class="btn btn-block" style="margin-top:12px" href="${esc(c.resenaUrl)}" target="_blank" rel="noopener">★ Dejanos tu reseña en Google</a></div></div>
       <div>${mapaFicticio()}
         <form class="caja" style="margin-top:16px" data-form="contacto" novalidate><h3>Escribinos</h3>
           <div class="campo" style="margin-bottom:10px"><label for="ct-n">Nombre</label><input id="ct-n" class="inp" name="nombre" required data-clarity-mask="true"></div>
@@ -1176,7 +1266,7 @@ function confirmarCompra(){
   if(st.co.pago === 'mp'){
     const k = calc();
     abrirModal(`<div class="mp-head"><b style="font-size:1.1rem">mercado pago</b><span class="sim">Simulado en la demo</span></div>
-      <p style="margin:0 0 4px;color:var(--gris)">Pagás a <b>El Ático de Hisui</b></p><p style="font-size:1.8rem;font-weight:800;font-family:var(--f-tit);margin:0 0 14px">${$$(k.total)}</p>
+      <p style="margin:0 0 4px;color:var(--gris)">Pagás a <b>El Ático de Hisui SMA</b></p><p style="font-size:1.8rem;font-weight:800;font-family:var(--f-tit);margin:0 0 14px">${$$(k.total)}</p>
       <p style="font-size:.9rem">En la versión real, acá se abre Mercado Pago para pagar con tarjeta, débito, dinero en cuenta o cuotas. Elegí cómo termina el pago de prueba:</p>
       <div class="m-acc"><button class="btn" data-a="mpRechazar">Simular pago rechazado</button><button class="btn btn-rojo" data-a="mpAprobar">Simular pago aprobado</button></div>`);
     return;
@@ -1228,9 +1318,9 @@ function vPanel(){
   const pend = db.pedidos.filter(p => ['Pendiente de pago','Pagado','En preparación'].includes(p.estado)).length;
   const cnt = {pedidos:pend, productos:db.productos.length, singles:db.singles.length};
   const cont = {resumen:pResumen, pedidos:pPedidos, productos:pProductos, singles:pSingles, torneos:pTorneos, clases:pClases, comunidad:pComunidad, config:pConfig}[st.ptab] || pResumen;
-  return `<div class="panel"><nav class="p-side" aria-label="Secciones del panel"><div class="logo">${logoSvg(34)}<span><b style="font-size:1.05rem">Panel del local</b><small>El Ático de Hisui</small></span></div>
+  return `<div class="panel"><nav class="p-side" aria-label="Secciones del panel"><div class="logo">${logoSvg(34)}<span><b style="font-size:1.05rem">Panel del local</b><small>El Ático de Hisui <span class="sma">SMA</span></small></span></div>
     ${TABS.map(([k,t]) => `<button class="p-tab ${st.ptab===k?'on':''}" data-a="ptab" data-t="${k}">${t}${cnt[k]!==undefined?`<span class="cnt">${cnt[k]}</span>`:''}</button>`).join('')}</nav>
-    <section class="p-main">${cont()}<div class="dev" style="margin-top:30px;border-radius:12px"><span>Propiedad de Cordobes Fausto</span><a class="wa" href="https://wa.me/${CONFIG.DEV_WHATSAPP}?text=${encodeURIComponent('Hola Fausto, vi el sistema de El Ático de Hisui y quiero consultar')}" target="_blank" rel="noopener">${I.wa} Soporte</a></div></section></div>`;
+    <section class="p-main">${cont()}<div class="dev" style="margin-top:30px;border-radius:12px"><span>Propiedad de Cordobes Fausto</span><a class="wa" href="https://wa.me/${CONFIG.DEV_WHATSAPP}?text=${encodeURIComponent('Hola Fausto, vi el sistema de El Ático de Hisui SMA y quiero consultar')}" target="_blank" rel="noopener">${I.wa} Soporte</a></div></section></div>`;
 }
 function hoyAR(iso){ return new Date(iso).toLocaleDateString('en-CA',{timeZone:TZ}) === new Date().toLocaleDateString('en-CA',{timeZone:TZ}); }
 function pResumen(){
@@ -1336,31 +1426,31 @@ function singlesEjemplo(){
   return J.map((r,i) => ({id:'s_ej'+i, juego:r[0], nombre:r[1], expansion:r[2], codigo:r[3], idioma:r[4], rareza:r[5], condicion:r[6], precio:r[7], stock:r[8], img:'', ejemplo:true}));
 }
 function pTorneos(){
-  return `<div class="p-hdr"><h1>Torneos y eventos</h1><button class="btn btn-sm btn-rojo" data-a="editGen" data-col="eventos" data-id="">+ Nuevo torneo</button></div>
-  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Día</th><th>Hora</th><th>Torneo</th><th>Juego</th><th>Inscripción</th><th>Cupo</th><th></th></tr></thead><tbody>
-  ${[...db.eventos].sort((a,b) => ((a.dia+5)%7) - ((b.dia+5)%7) || aMin(a.hora) - aMin(b.hora)).map(e => `<tr><td>${DIAS[e.dia]}</td><td>${e.hora}</td><td><b>${esc(e.nombre)}</b><br><small>${esc(e.formato)}</small></td><td><span class="dot" style="background:${catBy(e.juego).c}"></span> ${esc(catBy(e.juego).n)}</td><td>${e.costo?$$(e.costo):'Gratis'}</td><td>${e.cupo}</td>
+  return `<div class="p-hdr"><h1>Torneos y eventos</h1><span style="font-size:.85rem;color:var(--gris)">Las clases se cargan en “Clases” y también aparecen en el calendario.</span><button class="btn btn-sm btn-rojo" data-a="editGen" data-col="eventos" data-id="">+ Nuevo torneo</button></div>
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Día</th><th>Horario</th><th>Torneo</th><th>Juego</th><th>Inscripción</th><th>Cupo</th><th></th></tr></thead><tbody>
+  ${[...db.eventos].sort((a,b) => ((a.dia+5)%7) - ((b.dia+5)%7) || aMin(a.hora) - aMin(b.hora)).map(e => `<tr><td>${DIAS[e.dia]}</td><td>${rangoHora(e)}</td><td><b>${esc(e.nombre)}</b><br><small>${esc(e.formato)}</small></td><td><span class="dot" style="background:${catBy(e.juego).c}"></span> ${esc(catBy(e.juego).n)}</td><td>${e.costo?$$(e.costo):'—'}</td><td>${e.cupo||'—'}</td>
     <td style="white-space:nowrap"><button class="btn btn-sm" data-a="editGen" data-col="eventos" data-id="${e.id}">Editar</button> <button class="btn btn-sm" data-a="borrar" data-col="eventos" data-id="${e.id}">Borrar</button></td></tr>`).join('')}
   </tbody></table></div>`;
 }
 function pClases(){
   return `<div class="p-hdr"><h1>Clases</h1><button class="btn btn-sm btn-rojo" data-a="editGen" data-col="clases" data-id="">+ Nueva clase</button></div>
   <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Clase</th><th>Para</th><th>Día y hora</th><th>Valor</th><th>Cupo</th><th></th></tr></thead><tbody>
-  ${db.clases.map(c => `<tr><td><b>${esc(c.titulo)}</b></td><td>${esc(c.para)}</td><td>${DIAS[c.dia]} ${c.hora}</td><td>${$$(c.precio)}</td><td>${c.cupo}</td>
+  ${db.clases.map(c => `<tr><td><b>${esc(c.titulo)}</b></td><td>${esc(c.para)}</td><td>${DIAS[c.dia]} ${rangoHora(c)}</td><td>${c.precio?$$(c.precio):'Consultar'}</td><td>${c.cupo||'—'}</td>
     <td style="white-space:nowrap"><button class="btn btn-sm" data-a="editGen" data-col="clases" data-id="${c.id}">Editar</button> <button class="btn btn-sm" data-a="borrar" data-col="clases" data-id="${c.id}">Borrar</button></td></tr>`).join('')}
   </tbody></table></div>`;
 }
 function pComunidad(){
   return `<div class="p-hdr"><h1>Comunidad (blog)</h1><button class="btn btn-sm btn-rojo" data-a="editGen" data-col="posts" data-id="">+ Nueva publicación</button></div>
-  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Título</th><th>Sección</th><th>Fecha</th><th></th></tr></thead><tbody>
-  ${[...db.posts].sort((a,b) => b.fecha.localeCompare(a.fecha)).map(b => `<tr><td><b>${esc(b.titulo)}</b></td><td>${esc(b.cat)}</td><td>${fmtDia(b.fecha)}</td>
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Título</th><th>Autor</th><th>Sección</th><th>Fecha</th><th></th></tr></thead><tbody>
+  ${[...db.posts].sort((a,b) => b.fecha.localeCompare(a.fecha)).map(b => `<tr><td><b>${esc(b.titulo)}</b></td><td>${esc(b.autor||'—')}</td><td>${esc(b.cat)}</td><td>${fmtDia(b.fecha)}</td>
     <td style="white-space:nowrap"><button class="btn btn-sm" data-a="editGen" data-col="posts" data-id="${b.id}">Editar</button> <button class="btn btn-sm" data-a="borrar" data-col="posts" data-id="${b.id}">Borrar</button></td></tr>`).join('')}
   </tbody></table></div>`;
 }
 const DIAS_OPS = [2,3,4,5,6,0,1].map(d => [String(d), DIAS[d]]);
 const ESQUEMAS = {
-  eventos:{titulo:'torneo', pre:'e', campos:[{k:'nombre',l:'Nombre del torneo',t:'text',req:1,full:1},{k:'juego',l:'Juego',t:'select',ops:CATS.filter(c => c.tcg).map(c => [c.k,c.n])},{k:'dia',l:'Día',t:'select',ops:DIAS_OPS,num:1},{k:'hora',l:'Hora',t:'time',req:1},{k:'formato',l:'Formato',t:'text'},{k:'costo',l:'Inscripción ($, 0 = gratis)',t:'number'},{k:'cupo',l:'Cupo',t:'number'},{k:'premio',l:'Premios',t:'text',full:1}]},
-  clases:{titulo:'clase', pre:'c', campos:[{k:'titulo',l:'Nombre de la clase',t:'text',req:1,full:1},{k:'para',l:'Para quién (ej.: 7 a 12 años)',t:'text'},{k:'dia',l:'Día',t:'select',ops:DIAS_OPS,num:1},{k:'hora',l:'Hora',t:'time',req:1},{k:'precio',l:'Valor por clase ($)',t:'number'},{k:'cupo',l:'Cupo',t:'number'},{k:'desc',l:'Descripción',t:'textarea',full:1}]},
-  posts:{titulo:'publicación', pre:'b', campos:[{k:'titulo',l:'Título',t:'text',req:1,full:1},{k:'cat',l:'Sección',t:'select',ops:[['Torneos','Torneos'],['Guías','Guías'],['Novedades','Novedades'],['Tier list','Tier list']]},{k:'juego',l:'Juego relacionado',t:'select',ops:CATS.map(c => [c.k,c.n])},{k:'resumen',l:'Resumen (se ve en la tarjeta)',t:'textarea',full:1},{k:'cuerpo',l:'Texto completo',t:'textarea',full:1,rows:8},{k:'img',l:'Imagen de portada',t:'image',full:1}]}
+  eventos:{titulo:'torneo', pre:'e', campos:[{k:'nombre',l:'Nombre del torneo',t:'text',req:1,full:1},{k:'juego',l:'Juego',t:'select',ops:CATS.filter(c => c.tcg).map(c => [c.k,c.n])},{k:'dia',l:'Día',t:'select',ops:DIAS_OPS,num:1},{k:'hora',l:'Empieza',t:'time',req:1},{k:'fin',l:'Termina',t:'time'},{k:'formato',l:'Tipo (ej.: Torneo oficial)',t:'text'},{k:'costo',l:'Inscripción ($, 0 = no mostrar)',t:'number'},{k:'cupo',l:'Cupo (0 = no mostrar)',t:'number'},{k:'premio',l:'Premios (opcional)',t:'text',full:1}]},
+  clases:{titulo:'clase', pre:'c', campos:[{k:'titulo',l:'Nombre de la clase',t:'text',req:1,full:1},{k:'para',l:'Para quién (ej.: 7 a 12 años)',t:'text'},{k:'dia',l:'Día',t:'select',ops:DIAS_OPS,num:1},{k:'hora',l:'Empieza',t:'time',req:1},{k:'fin',l:'Termina',t:'time'},{k:'precio',l:'Valor por clase ($, 0 = consultar)',t:'number'},{k:'cupo',l:'Cupo',t:'number'},{k:'desc',l:'Descripción',t:'textarea',full:1}]},
+  posts:{titulo:'publicación', pre:'b', campos:[{k:'titulo',l:'Título',t:'text',req:1,full:1},{k:'autor',l:'Autor',t:'text'},{k:'cat',l:'Sección',t:'select',ops:[['Torneos','Torneos'],['Guías','Guías'],['Novedades','Novedades'],['Tier list','Tier list']]},{k:'juego',l:'Juego relacionado',t:'select',ops:CATS.map(c => [c.k,c.n])},{k:'resumen',l:'Resumen (se ve en la tarjeta)',t:'textarea',full:1},{k:'cuerpo',l:'Texto completo',t:'textarea',full:1,rows:8},{k:'img',l:'Imagen de portada',t:'image',full:1}]}
 };
 function pConfig(){
   const c = db.config;
@@ -1368,6 +1458,21 @@ function pConfig(){
   return `<div class="p-hdr"><h1>Configuración del local</h1></div>
   <form data-form="config" class="caja" novalidate><h3>Datos del local</h3><div class="form-g">
     ${['direccion:Dirección','ciudad:Ciudad','email:Email','instagram:Instagram'].map(x => { const [k,l] = x.split(':'); return `<div class="campo"><label for="cf-${k}">${l}</label><input id="cf-${k}" class="inp" name="${k}" value="${esc(c[k])}"></div>`; }).join('')}</div>
+    <h3 style="margin-top:20px">Redes y reseñas</h3><div class="form-g">
+      <div class="campo"><label for="cf-igu">Link de Instagram</label><input id="cf-igu" class="inp" name="instagramUrl" value="${esc(c.instagramUrl)}"></div>
+      <div class="campo"><label for="cf-res">Link para dejar reseña en Google</label><input id="cf-res" class="inp" name="resenaUrl" value="${esc(c.resenaUrl)}"></div></div>
+    <h3 style="margin-top:20px">Grupos de WhatsApp por juego <small style="font-weight:400;color:var(--gris);font-family:var(--f-txt)">(vacío = “link a cargar”)</small></h3><div class="form-g">
+      ${c.grupos.map((g,i) => `<div class="campo"><label for="cf-g${i}">${esc(catBy(g.juego).n)}</label><input id="cf-g${i}" class="inp" name="g${i}" placeholder="https://chat.whatsapp.com/..." value="${esc(g.url)}"></div>`).join('')}</div>
+    <h3 style="margin-top:20px">Banner de novedad (inicio)</h3>
+    <label class="chk"><input type="checkbox" name="bActivo" ${c.banner.activo?'checked':''}>Mostrar el banner en el inicio</label>
+    <div class="form-g">
+      <div class="campo"><label for="cf-be">Etiqueta</label><input id="cf-be" class="inp" name="bEtiqueta" value="${esc(c.banner.etiqueta)}"></div>
+      <div class="campo"><label for="cf-bt">Título</label><input id="cf-bt" class="inp" name="bTitulo" value="${esc(c.banner.titulo)}"></div>
+      <div class="campo full"><label for="cf-bx">Texto</label><input id="cf-bx" class="inp" name="bTexto" value="${esc(c.banner.texto)}"></div>
+      <div class="campo"><label for="cf-bb">Texto del botón</label><input id="cf-bb" class="inp" name="bBoton" value="${esc(c.banner.boton)}"></div>
+      <div class="campo"><label for="cf-bu">A dónde lleva el botón</label><select id="cf-bu" class="sel" name="bUrl"><option value="#productos" ${c.banner.url==='#productos'?'selected':''}>Todos los productos</option>${CATS.map(k => `<option value="#productos-${k.k}" ${c.banner.url==='#productos-'+k.k?'selected':''}>Productos de ${k.n}</option>`).join('')}<option value="#torneos" ${c.banner.url==='#torneos'?'selected':''}>Calendario de torneos</option></select></div>
+      <div class="campo full"><label>Imagen del banner</label><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><img class="img-prev" style="width:160px" src="${c.banner.img || ph('pokemon','Sellado')}" alt="Imagen actual del banner"><label class="btn btn-sm" style="cursor:pointer">Cambiar imagen<input type="file" accept="image/*" class="sr" data-ch="bannerImg"></label></div></div>
+    </div>
     <h3 style="margin-top:20px">Horarios de atención</h3>
     ${ord.map(d => `<div class="horario-row"><b>${DIAS[d]}</b><input class="inp" type="time" name="ha${d}" value="${c.horarios[d]?.a||'14:00'}" aria-label="Abre ${DIAS[d]}"><input class="inp" type="time" name="hc${d}" value="${c.horarios[d]?.c||'21:00'}" aria-label="Cierra ${DIAS[d]}"><label class="chk"><input type="checkbox" name="hx${d}" ${c.horarios[d]?'':'checked'}>Cerrado</label></div>`).join('')}
     <h3 style="margin-top:20px">Cobros y envíos</h3><div class="form-g">
@@ -1518,6 +1623,7 @@ const A = {
   tfiltro:(el) => { st.tf = el.dataset.k; render(); },
   bcat:(el) => { st.blogCat = el.dataset.k; render(); },
   info:(el) => mostrarInfo(el.dataset.i),
+  grupoSinLink:() => toast('Link de ejemplo: el local lo carga en Panel → Configuración'),
   arrepentimiento:() => arrepentimiento(),
   cookies:(el) => { sSet(KEY+'_cookies', el.dataset.v); if(el.dataset.v === 'si') cargarMedicion(); render(); },
   consultaClase:(el) => { const c = db.clases.find(x => x.id === el.dataset.id);
@@ -1595,7 +1701,9 @@ document.addEventListener('submit', e => {
   }
   if(k === 'config'){
     const c = db.config, el = f.elements;
-    ['direccion','ciudad','email','instagram','alias','cbu','titular'].forEach(x => c[x] = el[x].value.trim());
+    ['direccion','ciudad','email','instagram','instagramUrl','resenaUrl','alias','cbu','titular'].forEach(x => c[x] = el[x].value.trim());
+    c.grupos.forEach((g,i) => g.url = el['g'+i].value.trim());
+    Object.assign(c.banner, {activo:el.bActivo.checked, etiqueta:el.bEtiqueta.value.trim(), titulo:el.bTitulo.value.trim(), texto:el.bTexto.value.trim(), boton:el.bBoton.value.trim(), url:el.bUrl.value});
     ['descTransfer','envioGratisDesde','costoSMA'].forEach(x => c[x] = Math.max(0, +el[x].value || 0));
     c.descTransfer = Math.min(50, c.descTransfer);
     for(let d = 0; d < 7; d++) c.horarios[d] = el['hx'+d].checked ? null : {a:el['ha'+d].value || '14:00', c:el['hc'+d].value || '21:00'};
@@ -1622,6 +1730,10 @@ document.addEventListener('change', async e => {
   if(k === 'formImg'){
     const file = el.files[0]; if(!file) return;
     try{ const d = await achicarImg(file); formImg[el.dataset.k] = d; $('#prev-'+el.dataset.k).src = d; }catch(err){ toast('No se pudo leer esa imagen'); }
+  }
+  if(k === 'bannerImg'){
+    const file = el.files[0]; if(!file) return;
+    try{ db.config.banner.img = await achicarImg(file, 1200); if(guardar()) toast('Imagen del banner actualizada ✔'); render(); }catch(err){ toast('No se pudo leer esa imagen'); }
   }
   if(k === 'comprobante'){
     const file = el.files[0], p = db.pedidos.find(x => x.num === +el.dataset.num); if(!file || !p) return;
